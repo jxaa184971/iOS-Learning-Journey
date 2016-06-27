@@ -1,13 +1,8 @@
 # iOS Learning Journey
 - Personal iOS Learning Journey
 
-------
 
-[TOC]
-
-------
-# 1. UIImage
-## 1.1 UIImage Resize
+### UIImage Resize
 在开始生成新的图片之前, 需要有图片生成的环境. 使用`UIGraphicsBeginImageContextWithOptions(_ size: CGSize, _ opaque: Bool, _ scale: CGFloat)`方法生成环境. opaque: true为整个context不透明, false为可以部分透明.
 
 得到画图环境后, UIImage的`drawInRect(_ rect: CGRect)`方法生成新的图像.
