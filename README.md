@@ -8,17 +8,13 @@
 ------
 # 1. UIImage
 ## 1.1 UIImage Resize
-在开始生成新的图片之前, 需要有画图的环境. 使用以下方法开始生成画图环境.
+在开始生成新的图片之前, 需要有图片生成的环境. 使用`UIGraphicsBeginImageContextWithOptions(_ size: CGSize, _ opaque: Bool, _ scale: CGFloat)`方法生成环境. opaque: true为整个context不透明, false为可以部分透明.
 
-> UIGraphicsBeginImageContextWithOptions(_ size: CGSize, _ opaque: Bool, _ scale: CGFloat) 
+得到画图环境后, UIImage的`drawInRect(_ rect: CGRect)`方法生成新的图像.
 
-opaque: true为整个context不透明, false为可以部分透明
+使用`UIGraphicsGetImageFromCurrentImageContext()`得到重新改变大小的图片.
 
-得到画图环境后, UIImage的drawInRect(_ rect: CGRect)方法生成新的图像.
-
-使用UIGraphicsGetImageFromCurrentImageContext()得到重新改变大小的图片.
-
-关闭画图环境.
+关闭画图环境`UIGraphicsEndImageContext()`.
 
 ``` Swift
 static func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
