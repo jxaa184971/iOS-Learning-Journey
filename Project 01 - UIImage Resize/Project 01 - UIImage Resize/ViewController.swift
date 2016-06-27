@@ -24,6 +24,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         mapView.delegate = self
         annotation = MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: -33.873059, longitude: 151.207048), title: "This is annotation")
         mapView.addAnnotation(annotation)
+        
     }
 
     override func didReceiveMemoryWarning() {
