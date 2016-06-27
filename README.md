@@ -1,8 +1,11 @@
 # iOS Learning Journey
 - Personal iOS Learning Journey
 
+------
+
 [TOC]
 
+------
 # 1. UIImage
 ## 1.1 UIImage Resize
 在开始生成新的图片之前, 需要有画图的环境. 使用以下方法开始生成画图环境.
