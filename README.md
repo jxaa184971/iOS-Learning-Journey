@@ -3,7 +3,7 @@
 
 #目录
 - [iOS Learning Journey](#ios-learning-journey)
-    - [Project 01 - UIImage Resize](#project-01-uiimage-resize)
+    - [Project 01 - UIImage Resize](#project-01---uiimage-resize)
     - [Project 02 - UIImage Resize](#project-02-uiimage-resize)
 
 ### Project 01 - UIImage Resize
