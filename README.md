@@ -3,10 +3,10 @@
 
 #目录
 - [iOS Learning Journey](#ios-learning-journey)
-    - [Project 01 - UIImage Resize](#project01-uiimage-resize)
-    - [Project 02 - UIImage Resize](#project02-uiimage-resize)
+    - [Project 01 - UIImage Resize](#project-01-uiimage-resize)
+    - [Project 02 - UIImage Resize](#project-02-uiimage-resize)
 
-### Project01 UIImage Resize
+### Project 01 - UIImage Resize
 在使用图片的时候, 有时候图片的原本像素太大, 导致显示的时候图片显示异常. 例如使用地图自定义大头针的时候, 如果图片像素过大, 大头针会铺满整个屏幕, 直接缩小修改图片的大小又会导致大头针图像变得模糊. 这时候就需要更改UIImage到所需要的像素.
 
 ![Alt Text](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2001%20-%20UIImage%20Resize/Project01.gif)
@@ -37,5 +37,5 @@ static func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
 }
 ```
 
-### Project02 UIImage Resize
+### Project 02 - UIImage Resize
 
