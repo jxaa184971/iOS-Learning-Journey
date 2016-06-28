@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_02___HTTP_Request___JSON" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result" translatesAutoresizingMaskIntoConstraints="NO" id="NI4-xB-TY2">
+                                <rect key="frame" x="133" y="57" width="334" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="334" id="eLH-3H-x8m"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example Result JSON Format" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1BW-bi-k0b">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QXI-Na-p5v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14b-Io-UDx">
+                                <rect key="frame" x="252" y="258" width="96" height="30"/>
+                                <state key="normal" title="Send Request"/>
+                                <connections>
+                                    <action selector="requestBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="APs-1f-P8Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qh1-Gj-MaN">
+                                <rect key="frame" x="282" y="285" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kcM-Ca-N9a"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Host:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeT-hK-wQ7">
+                                <rect key="frame" x="20" y="323" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept Language:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxb-u9-5vL">
+                                <rect key="frame" x="20" y="352" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDY-eF-TEq">
+                                <rect key="frame" x="20" y="381" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZR-ST-nIZ">
+                                <rect key="frame" x="20" y="410" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IDY-eF-TEq" firstAttribute="top" secondItem="Kxb-u9-5vL" secondAttribute="bottom" constant="8" symbolic="YES" id="3ug-bi-u6B"/>
+                            <constraint firstItem="NI4-xB-TY2" firstAttribute="top" secondItem="1BW-bi-k0b" secondAttribute="bottom" constant="8" symbolic="YES" id="4AR-wj-rg4"/>
+                            <constraint firstItem="1BW-bi-k0b" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6VX-Du-tOd"/>
+                            <constraint firstItem="jZR-ST-nIZ" firstAttribute="top" secondItem="IDY-eF-TEq" secondAttribute="bottom" constant="8" symbolic="YES" id="6cG-w5-riH"/>
+                            <constraint firstItem="1BW-bi-k0b" firstAttribute="centerX" secondItem="NI4-xB-TY2" secondAttribute="centerX" id="82P-jg-BpV"/>
+                            <constraint firstItem="NeT-hK-wQ7" firstAttribute="trailing" secondItem="Kxb-u9-5vL" secondAttribute="trailing" id="Af9-3a-bs2"/>
+                            <constraint firstItem="IDY-eF-TEq" firstAttribute="leading" secondItem="jZR-ST-nIZ" secondAttribute="leading" id="BKD-0o-uyA"/>
+                            <constraint firstItem="NeT-hK-wQ7" firstAttribute="leading" secondItem="Kxb-u9-5vL" secondAttribute="leading" id="IfD-L2-EG5"/>
+                            <constraint firstItem="14b-Io-UDx" firstAttribute="centerX" secondItem="Qh1-Gj-MaN" secondAttribute="centerX" id="LTv-m8-f0J"/>
+                            <constraint firstItem="1BW-bi-k0b" firstAttribute="trailing" secondItem="NeT-hK-wQ7" secondAttribute="trailing" id="OSX-Hm-7rx"/>
+                            <constraint firstItem="Kxb-u9-5vL" firstAttribute="leading" secondItem="IDY-eF-TEq" secondAttribute="leading" id="RIS-c9-ych"/>
+                            <constraint firstItem="Qh1-Gj-MaN" firstAttribute="centerX" secondItem="NeT-hK-wQ7" secondAttribute="centerX" id="ZWM-KR-qFr"/>
+                            <constraint firstItem="14b-Io-UDx" firstAttribute="top" secondItem="NI4-xB-TY2" secondAttribute="bottom" constant="8" symbolic="YES" id="a8T-wk-MpO"/>
+                            <constraint firstItem="IDY-eF-TEq" firstAttribute="trailing" secondItem="jZR-ST-nIZ" secondAttribute="trailing" id="coo-n4-TDQ"/>
+                            <constraint firstItem="Qh1-Gj-MaN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="edE-jO-QL0"/>
+                            <constraint firstItem="NeT-hK-wQ7" firstAttribute="top" secondItem="Qh1-Gj-MaN" secondAttribute="bottom" constant="8" symbolic="YES" id="h4B-LK-RPS"/>
+                            <constraint firstItem="Kxb-u9-5vL" firstAttribute="trailing" secondItem="IDY-eF-TEq" secondAttribute="trailing" id="hE7-g9-FjI"/>
+                            <constraint firstItem="1BW-bi-k0b" firstAttribute="leading" secondItem="NeT-hK-wQ7" secondAttribute="leading" id="lNU-J5-d4f"/>
+                            <constraint firstItem="1BW-bi-k0b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="nix-9w-Mf3"/>
+                            <constraint firstItem="1BW-bi-k0b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oBu-L5-UNd"/>
+                            <constraint firstItem="Kxb-u9-5vL" firstAttribute="top" secondItem="NeT-hK-wQ7" secondAttribute="bottom" constant="8" symbolic="YES" id="sV0-ox-jcb"/>
+                            <constraint firstItem="Qh1-Gj-MaN" firstAttribute="top" secondItem="NI4-xB-TY2" secondAttribute="bottom" constant="35" id="vjU-3J-N2t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hostLabel" destination="NeT-hK-wQ7" id="Edg-Sy-PiL"/>
+                        <outlet property="languageLabel" destination="Kxb-u9-5vL" id="bsa-Sg-k9K"/>
+                        <outlet property="originLabel" destination="IDY-eF-TEq" id="Bn2-Zf-gmK"/>
+                        <outlet property="urlLabel" destination="jZR-ST-nIZ" id="uEk-po-BgT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="299"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="result" width="736" height="478"/>
+    </resources>
+</document>
