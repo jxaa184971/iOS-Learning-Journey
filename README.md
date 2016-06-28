@@ -4,7 +4,7 @@
 #目录
 - [iOS Learning Journey](#ios-learning-journey)
     - [Project 01 - UIImage Resize](#project-01---uiimage-resize)
-
+    - [Project 02 - HTTP Request & JSON](#project-02---http-request-&-json)
 
 
 ### Project 01 - UIImage Resize
@@ -40,5 +40,5 @@ static func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
 
 
 
-### Project 02 - 
+### Project 02 - HTTP Request & JSON
 
