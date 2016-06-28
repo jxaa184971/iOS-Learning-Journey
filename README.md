@@ -42,11 +42,69 @@ static func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
 
 ### Project 02 - HTTP Request and JSON
 发送HTTP同步请求及JSON格式的数据处理
+ 
 ![project01](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2002%20-%20HTTP%20Request%20%26%20JSON/Project02.gif)
 
 实现方法:
-需要有一个NSURL对象来封装需要访问的url地址, 例如`let url = NSURL(string: "http://httpbin.org/get")`
-通过该NSURL对象来生成NSRequest对象, 例如`let request: NSURLRequest = NSURLRequest(URL: url!)`
-需要NSResponse对象来储存访问结果, 例如`let response: AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil`
+需要有一个NSURL对象来封装需要访问的url地址
+ 
+通过该NSURL对象来生成NSRequest对象
+ 
+需要NSResponse对象来储存访问结果
+ 
+通过NSURLConnection来发送HTTP请求
 
+最后通过对获取的NSData进行JSON解析
+
+``` swift
+func sendRequest() -> Array<String>?
+    {
+        let url = NSURL(string: "http://httpbin.org/get")
+        let request: NSURLRequest = NSURLRequest(URL: url!)
+        let response: AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil
+        
+        do
+        {
+            let data:NSData = try NSURLConnection.sendSynchronousRequest(request, returningResponse: response)
+            let results = self.parseJSONToString(data)
+            if results != nil
+            {
+                return results!
+            }
+        }
+        catch
+        {
+            print("Error when sending request")
+        }
+        return nil
+    }
+    
+    func parseJSONToString(data:NSData) -> Array<String>?
+    {
+        var results = Array<String>()
+        
+        do {
+            let entry = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+            
+            let headers = entry.valueForKey("headers") as! NSDictionary
+            let host = headers.valueForKey("Host") as! String
+            let acceptLanguage = headers.valueForKey("Accept-Language") as! String
+            
+            let origin = entry.valueForKey("origin") as! String
+            let url = entry.valueForKey("url") as! String
+            
+            results.append(host)
+            results.append(acceptLanguage)
+            results.append(origin)
+            results.append(url)
+            
+            return results
+        }
+        catch
+        {
+            print("error serializing JSON: \(error)")
+            return nil
+        }
+    }
+```
 
