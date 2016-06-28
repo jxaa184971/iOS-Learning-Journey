@@ -47,15 +47,15 @@ static func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
 
 实现方法:
 
-需要有一个NSURL对象来封装需要访问的url地址
+需要有一个NSURL对象来封装需要访问的url地址 `NSURL(string: "http://httpbin.org/get")`
  
-通过该NSURL对象来生成NSRequest对象
+通过该NSURL对象来生成NSRequest对象 `NSURLRequest(URL: url!)`
  
-需要NSResponse对象来储存访问结果
+需要NSResponse对象来储存访问结果 
  
-通过NSURLConnection来发送HTTP请求
+通过NSURLConnection来发送HTTP请求 `try NSURLConnection.sendSynchronousRequest(request, returningResponse: response)`
 
-最后通过对获取的NSData进行JSON解析
+最后通过对获取的NSData进行JSON解析 `try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)`
 
 ``` swift
 func sendRequest() -> Array<String>?
