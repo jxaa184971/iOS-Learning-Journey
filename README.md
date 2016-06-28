@@ -25,7 +25,7 @@
 ##### 具体实现代码:
 
 ``` Swift
-static func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
+func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
         // 用新的图片宽度除以原来图片的宽度得到其比例
         let scale = newWidth / image.size.width
         // 用得到的比例计算新的图片高度
