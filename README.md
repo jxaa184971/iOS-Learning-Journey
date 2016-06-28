@@ -22,6 +22,8 @@
 
 关闭画图环境`UIGraphicsEndImageContext()`.
 
+## 具体实现代码:
+
 ``` Swift
 static func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
         // 用新的图片宽度除以原来图片的宽度得到其比例
@@ -56,6 +58,17 @@ static func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
 通过NSURLConnection来发送HTTP请求 `try NSURLConnection.sendSynchronousRequest(request, returningResponse: response)`
 
 最后通过对获取的NSData进行JSON解析 `try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)`
+
+PS: 由于安全问题, 在新版本的iOS系统中禁止使用明码HTTP请求, 所以在使用前需要在plist里面添加以下字段
+
+```
+<key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+```
+## 具体实现代码:
 
 ``` swift
 func sendRequest() -> Array<String>?
