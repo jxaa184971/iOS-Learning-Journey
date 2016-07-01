@@ -76,7 +76,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         keyFrameAnimation.duration = 1
         keyFrameAnimation.beginTime = CACurrentMediaTime() + 0.5
         
-        // timing functions用来设置每两个值之间的动画效果. 例如有n个values, 就需要有n-1个timeFunctions
+        // timing functions用来设置每两帧之间的动画效果. 例如有n个values, 就需要有n-1个timeFunctions
         keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)]
  
         let initalBounds = NSValue(CGRect: mask!.bounds)
