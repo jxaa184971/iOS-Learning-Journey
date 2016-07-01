@@ -134,25 +134,25 @@ func sendRequest() -> Array<String>?
 
 具体动画实现代码如下:
 ```swift
+// keyPath用来定义动画所改变的CALayer的属性, 在这里改变的为mask的bounds属性
 let keyFrameAnimation = CAKeyframeAnimation(keyPath: "bounds")
+keyFrameAnimation.delegate = self
+keyFrameAnimation.duration = 1
+keyFrameAnimation.beginTime = CACurrentMediaTime() + 0.5
         
-        keyFrameAnimation.delegate = self
-        keyFrameAnimation.duration = 1
-        keyFrameAnimation.beginTime = CACurrentMediaTime() + 0.5
-        
-        // timing functions用来设置每两帧之间的动画效果. 例如有n个values, 就需要有n-1个timeFunctions
-        keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)]
+// timing functions用来设置每两帧之间的动画效果. 例如有n帧, 就需要有n-1个timeFunctions
+keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)]
  
-        let initalBounds = NSValue(CGRect: mask!.bounds)
-        let secondBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 90, height: 90))
-        let finalBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 3200, height: 3200))
+let initalBounds = NSValue(CGRect: mask!.bounds)
+let secondBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 90, height: 90))
+let finalBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 3200, height: 3200))
         
-        keyFrameAnimation.values = [initalBounds, secondBounds, finalBounds]
-        // keyTimes用来定义每一帧的时间点
-        keyFrameAnimation.keyTimes = [0, 0.33, 1]
+keyFrameAnimation.values = [initalBounds, secondBounds, finalBounds]
+// keyTimes用来定义每一帧的时间点
+keyFrameAnimation.keyTimes = [0, 0.33, 1]
         
-        // 添加动画并播放
-        self.mask!.addAnimation(keyFrameAnimation, forKey: "bounds")
+// 添加动画并播放
+self.mask!.addAnimation(keyFrameAnimation, forKey: "bounds")
 ```
 动画结束后需要调用delegate方法`animationDidStop(anim: CAAnimation, finished flag: Bool)`来取消mask
 
