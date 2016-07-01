@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82D76D5D1D2673C300E9F8AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D76D5C1D2673C300E9F8AB /* AppDelegate.swift */; };
+		82D76D621D2673C300E9F8AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D76D601D2673C300E9F8AB /* Main.storyboard */; };
+		82D76D641D2673C300E9F8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D76D631D2673C300E9F8AB /* Assets.xcassets */; };
+		82D76D671D2673C300E9F8AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D76D651D2673C300E9F8AB /* LaunchScreen.storyboard */; };
+		82D76D6F1D26749F00E9F8AB /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 82D76D6E1D26749F00E9F8AB /* twitter.png */; };
+		82D76D731D26782D00E9F8AB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D76D721D26782D00E9F8AB /* TableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82D76D591D2673C300E9F8AB /* Project 3 - Splash Lauching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 3 - Splash Lauching.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D76D5C1D2673C300E9F8AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82D76D611D2673C300E9F8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82D76D631D2673C300E9F8AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82D76D661D2673C300E9F8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82D76D681D2673C300E9F8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82D76D6E1D26749F00E9F8AB /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		82D76D721D26782D00E9F8AB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82D76D561D2673C300E9F8AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82D76D501D2673C300E9F8AB = {
+			isa = PBXGroup;
+			children = (
+				82D76D5B1D2673C300E9F8AB /* Project 3 - Splash Lauching */,
+				82D76D5A1D2673C300E9F8AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82D76D5A1D2673C300E9F8AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82D76D591D2673C300E9F8AB /* Project 3 - Splash Lauching.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82D76D5B1D2673C300E9F8AB /* Project 3 - Splash Lauching */ = {
+			isa = PBXGroup;
+			children = (
+				82D76D5C1D2673C300E9F8AB /* AppDelegate.swift */,
+				82D76D721D26782D00E9F8AB /* TableViewController.swift */,
+				82D76D601D2673C300E9F8AB /* Main.storyboard */,
+				82D76D631D2673C300E9F8AB /* Assets.xcassets */,
+				82D76D651D2673C300E9F8AB /* LaunchScreen.storyboard */,
+				82D76D681D2673C300E9F8AB /* Info.plist */,
+				82D76D6E1D26749F00E9F8AB /* twitter.png */,
+			);
+			path = "Project 3 - Splash Lauching";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82D76D581D2673C300E9F8AB /* Project 3 - Splash Lauching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82D76D6B1D2673C300E9F8AB /* Build configuration list for PBXNativeTarget "Project 3 - Splash Lauching" */;
+			buildPhases = (
+				82D76D551D2673C300E9F8AB /* Sources */,
+				82D76D561D2673C300E9F8AB /* Frameworks */,
+				82D76D571D2673C300E9F8AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 3 - Splash Lauching";
+			productName = "Project 3 - Splash Lauching";
+			productReference = 82D76D591D2673C300E9F8AB /* Project 3 - Splash Lauching.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82D76D511D2673C300E9F8AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Jamie;
+				TargetAttributes = {
+					82D76D581D2673C300E9F8AB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 82D76D541D2673C300E9F8AB /* Build configuration list for PBXProject "Project 3 - Splash Lauching" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82D76D501D2673C300E9F8AB;
+			productRefGroup = 82D76D5A1D2673C300E9F8AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82D76D581D2673C300E9F8AB /* Project 3 - Splash Lauching */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82D76D571D2673C300E9F8AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D76D671D2673C300E9F8AB /* LaunchScreen.storyboard in Resources */,
+				82D76D6F1D26749F00E9F8AB /* twitter.png in Resources */,
+				82D76D641D2673C300E9F8AB /* Assets.xcassets in Resources */,
+				82D76D621D2673C300E9F8AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82D76D551D2673C300E9F8AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D76D5D1D2673C300E9F8AB /* AppDelegate.swift in Sources */,
+				82D76D731D26782D00E9F8AB /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82D76D601D2673C300E9F8AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82D76D611D2673C300E9F8AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82D76D651D2673C300E9F8AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82D76D661D2673C300E9F8AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82D76D691D2673C300E9F8AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82D76D6A1D2673C300E9F8AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82D76D6C1D2673C300E9F8AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 3 - Splash Lauching/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamie.Project-3---Splash-Lauching";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		82D76D6D1D2673C300E9F8AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 3 - Splash Lauching/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamie.Project-3---Splash-Lauching";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82D76D541D2673C300E9F8AB /* Build configuration list for PBXProject "Project 3 - Splash Lauching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D76D691D2673C300E9F8AB /* Debug */,
+				82D76D6A1D2673C300E9F8AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82D76D6B1D2673C300E9F8AB /* Build configuration list for PBXNativeTarget "Project 3 - Splash Lauching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D76D6C1D2673C300E9F8AB /* Debug */,
+				82D76D6D1D2673C300E9F8AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82D76D511D2673C300E9F8AB /* Project object */;
+}
