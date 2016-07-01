@@ -5,7 +5,8 @@
 - [iOS Learning Journey](#ios-learning-journey)
     - [Project 01 - UIImage Resize](#project-01---uiimage-resize)
     - [Project 02 - HTTP Request & JSON](#project-02---http-request-and-json)
-    
+    - [Project 03 - Splash Launching](#project-03---splash-launching)    
+
 <br\><br\>
 ### Project 01 - UIImage Resize
 在使用图片的时候, 有时候图片的原本像素太大, 导致显示的时候图片显示异常. 例如使用地图自定义大头针的时候, 如果图片像素过大, 大头针会铺满整个屏幕, 直接缩小修改图片的大小又会导致大头针图像变得模糊. 这时候就需要更改UIImage到所需要的像素.
@@ -45,7 +46,7 @@ func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
 ### Project 02 - HTTP Request and JSON
 发送HTTP同步请求及JSON格式的数据处理
  
-![project01](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2002%20-%20HTTP%20Request%20%26%20JSON/Project02.gif)
+![project02](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2002%20-%20HTTP%20Request%20%26%20JSON/Project02.gif)
 
 实现方法:
 
@@ -122,3 +123,9 @@ func sendRequest() -> Array<String>?
     }
 ```
 <br\><br\>
+
+### Project 03 - Splash Launching
+模仿Twitter的Lauching动画
+
+![project03](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2003%20-%20Splash%20Lauching/Project03.gif)
+
