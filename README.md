@@ -129,3 +129,28 @@ func sendRequest() -> Array<String>?
 
 ![project03](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2003%20-%20Splash%20Lauching/Project03.gif)
 
+实现方法:
+通过改变CALayer mask属性的边界bound来实现动画效果. mask就是定义该Layer显示的部分.在这里显示的部分最初与Twitter Logo相吻合, 然后略微缩小, 最后放大至超过屏幕大小.
+
+具体动画实现代码如下:
+```swift
+let keyFrameAnimation = CAKeyframeAnimation(keyPath: "bounds")
+        
+        keyFrameAnimation.delegate = self
+        keyFrameAnimation.duration = 1
+        keyFrameAnimation.beginTime = CACurrentMediaTime() + 0.5
+        
+        // timing functions用来设置每两个值之间的动画效果. 例如有n个values, 就需要有n-1个timeFunctions
+        keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)]
+ 
+        let initalBounds = NSValue(CGRect: mask!.bounds)
+        let secondBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 90, height: 90))
+        let finalBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 3200, height: 3200))
+        
+        keyFrameAnimation.values = [initalBounds, secondBounds, finalBounds]
+        // keyTimes用来定义每一帧的时间点
+        keyFrameAnimation.keyTimes = [0, 0.33, 1]
+        
+        // 添加动画并播放
+        self.mask!.addAnimation(keyFrameAnimation, forKey: "bounds")
+```
