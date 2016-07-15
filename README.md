@@ -6,7 +6,7 @@
     - [Project 01 - UIImage Resize](#project-01---uiimage-resize)
     - [Project 02 - HTTP Request & JSON](#project-02---http-request-and-json)
     - [Project 03 - Splash Launching](#project-03---splash-launching)    
-
+    - [Project 04 - Simple Animation](#project-04---simple-animation)
 <br\><br\>
 ### Project 01 - UIImage Resize
 在使用图片的时候, 有时候图片的原本像素太大, 导致显示的时候图片显示异常. 例如使用地图自定义大头针的时候, 如果图片像素过大, 大头针会铺满整个屏幕, 直接缩小修改图片的大小又会导致大头针图像变得模糊. 这时候就需要更改UIImage到所需要的像素.
@@ -162,3 +162,17 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
     self.controller?.view.layer.mask = nil
 }
 ```
+
+###Project 04 - Simple Animation
+本项目介绍了利用`UIView.animateWithDuration()`方法来实现一些简单的动画, 包括位置的改变, 透明度的改变, 大小的改变, 颜色的改变已经旋转. 效果图如下:
+
+#####位置
+![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Position.gif)
+#####透明度
+![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Opacity.gif)
+#####大小
+![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Scale.gif)
+#####颜色
+![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Color.gif)
+#####旋转
+![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Rotation.gif)
