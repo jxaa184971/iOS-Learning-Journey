@@ -7,7 +7,8 @@
     - [Project 02 - HTTP Request & JSON](#project-02---http-request-and-json)
     - [Project 03 - Splash Launching](#project-03---splash-launching)    
     - [Project 04 - Simple Animation](#project-04---simple-animation)
-    
+    - [Project 05 - Log In Animation](#project-05---log-in-animation)
+
 <br\><br\>
 
 ### Project 01 - UIImage Resize
@@ -178,3 +179,8 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 ![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Color.gif)
 #####旋转
 ![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Rotation.gif)
+
+
+###Project 05 - Log In Animation
+此项目为实现一些登录界面的动画效果, 让用户交互体验提高.
+![project05](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2005%20-%20Log%20In%20Animation/Project%2005.gif)
