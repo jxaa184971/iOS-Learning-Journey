@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82BA9F981D39EA2900957573 /* RepeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BA9F971D39EA2900957573 /* RepeatViewController.swift */; };
+		82BA9F9A1D39EE0700957573 /* EasingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BA9F991D39EE0700957573 /* EasingViewController.swift */; };
+		82BA9F9C1D39FAF300957573 /* SpringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BA9F9B1D39FAF300957573 /* SpringViewController.swift */; };
 		82E12FD31D3893A900C9477B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E12FD21D3893A900C9477B /* AppDelegate.swift */; };
 		82E12FD81D3893A900C9477B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E12FD61D3893A900C9477B /* Main.storyboard */; };
 		82E12FDA1D3893A900C9477B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82E12FD91D3893A900C9477B /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82BA9F971D39EA2900957573 /* RepeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatViewController.swift; sourceTree = "<group>"; };
+		82BA9F991D39EE0700957573 /* EasingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingViewController.swift; sourceTree = "<group>"; };
+		82BA9F9B1D39FAF300957573 /* SpringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringViewController.swift; sourceTree = "<group>"; };
 		82E12FCF1D3893A900C9477B /* Project 04 - Simple Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 04 - Simple Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E12FD21D3893A900C9477B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82E12FD71D3893A900C9477B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +78,9 @@
 				82E12FE81D389EFE00C9477B /* ScaleViewController.swift */,
 				82E12FEA1D38A0E300C9477B /* ColorViewController.swift */,
 				82E12FEC1D38A22700C9477B /* RotationViewController.swift */,
+				82BA9F971D39EA2900957573 /* RepeatViewController.swift */,
+				82BA9F991D39EE0700957573 /* EasingViewController.swift */,
+				82BA9F9B1D39FAF300957573 /* SpringViewController.swift */,
 			);
 			path = "Project 04 - Simple Animation";
 			sourceTree = "<group>";
@@ -147,9 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82BA9F981D39EA2900957573 /* RepeatViewController.swift in Sources */,
 				82E12FE71D389D2200C9477B /* OpacityViewController.swift in Sources */,
 				82E12FD31D3893A900C9477B /* AppDelegate.swift in Sources */,
+				82BA9F9A1D39EE0700957573 /* EasingViewController.swift in Sources */,
 				82E12FED1D38A22700C9477B /* RotationViewController.swift in Sources */,
+				82BA9F9C1D39FAF300957573 /* SpringViewController.swift in Sources */,
 				82E12FE51D38944A00C9477B /* PositionViewController.swift in Sources */,
 				82E12FEB1D38A0E300C9477B /* ColorViewController.swift in Sources */,
 				82E12FE91D389EFE00C9477B /* ScaleViewController.swift in Sources */,
@@ -302,6 +314,7 @@
 				82E12FE31D3893A900C9477B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

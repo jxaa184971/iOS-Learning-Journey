@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		822DCE761D3C802E00138B76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DCE751D3C802E00138B76 /* AppDelegate.swift */; };
+		822DCE7B1D3C802E00138B76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822DCE791D3C802E00138B76 /* Main.storyboard */; };
+		822DCE7D1D3C802E00138B76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822DCE7C1D3C802E00138B76 /* Assets.xcassets */; };
+		822DCE801D3C802E00138B76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822DCE7E1D3C802E00138B76 /* LaunchScreen.storyboard */; };
+		822DCE881D3C808500138B76 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DCE871D3C808500138B76 /* LogInViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		822DCE721D3C802E00138B76 /* Project 05 - Log In Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 05 - Log In Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		822DCE751D3C802E00138B76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		822DCE7A1D3C802E00138B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		822DCE7C1D3C802E00138B76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		822DCE7F1D3C802E00138B76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		822DCE811D3C802E00138B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822DCE871D3C808500138B76 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		822DCE6F1D3C802E00138B76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		822DCE691D3C802E00138B76 = {
+			isa = PBXGroup;
+			children = (
+				822DCE741D3C802E00138B76 /* Project 05 - Log In Animation */,
+				822DCE731D3C802E00138B76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		822DCE731D3C802E00138B76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				822DCE721D3C802E00138B76 /* Project 05 - Log In Animation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		822DCE741D3C802E00138B76 /* Project 05 - Log In Animation */ = {
+			isa = PBXGroup;
+			children = (
+				822DCE751D3C802E00138B76 /* AppDelegate.swift */,
+				822DCE791D3C802E00138B76 /* Main.storyboard */,
+				822DCE7C1D3C802E00138B76 /* Assets.xcassets */,
+				822DCE7E1D3C802E00138B76 /* LaunchScreen.storyboard */,
+				822DCE811D3C802E00138B76 /* Info.plist */,
+				822DCE871D3C808500138B76 /* LogInViewController.swift */,
+			);
+			path = "Project 05 - Log In Animation";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		822DCE711D3C802E00138B76 /* Project 05 - Log In Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 822DCE841D3C802E00138B76 /* Build configuration list for PBXNativeTarget "Project 05 - Log In Animation" */;
+			buildPhases = (
+				822DCE6E1D3C802E00138B76 /* Sources */,
+				822DCE6F1D3C802E00138B76 /* Frameworks */,
+				822DCE701D3C802E00138B76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 05 - Log In Animation";
+			productName = "Project 05 - Log In Animation";
+			productReference = 822DCE721D3C802E00138B76 /* Project 05 - Log In Animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		822DCE6A1D3C802E00138B76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Jamie;
+				TargetAttributes = {
+					822DCE711D3C802E00138B76 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 822DCE6D1D3C802E00138B76 /* Build configuration list for PBXProject "Project 05 - Log In Animation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 822DCE691D3C802E00138B76;
+			productRefGroup = 822DCE731D3C802E00138B76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				822DCE711D3C802E00138B76 /* Project 05 - Log In Animation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		822DCE701D3C802E00138B76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822DCE801D3C802E00138B76 /* LaunchScreen.storyboard in Resources */,
+				822DCE7D1D3C802E00138B76 /* Assets.xcassets in Resources */,
+				822DCE7B1D3C802E00138B76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		822DCE6E1D3C802E00138B76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822DCE881D3C808500138B76 /* LogInViewController.swift in Sources */,
+				822DCE761D3C802E00138B76 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		822DCE791D3C802E00138B76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				822DCE7A1D3C802E00138B76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		822DCE7E1D3C802E00138B76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				822DCE7F1D3C802E00138B76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		822DCE821D3C802E00138B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		822DCE831D3C802E00138B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		822DCE851D3C802E00138B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 05 - Log In Animation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamie.Project-05---Log-In-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		822DCE861D3C802E00138B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 05 - Log In Animation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamie.Project-05---Log-In-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		822DCE6D1D3C802E00138B76 /* Build configuration list for PBXProject "Project 05 - Log In Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				822DCE821D3C802E00138B76 /* Debug */,
+				822DCE831D3C802E00138B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		822DCE841D3C802E00138B76 /* Build configuration list for PBXNativeTarget "Project 05 - Log In Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				822DCE851D3C802E00138B76 /* Debug */,
+				822DCE861D3C802E00138B76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 822DCE6A1D3C802E00138B76 /* Project object */;
+}
