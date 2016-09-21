@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		82CF69921D912B2C00890864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CF69911D912B2C00890864 /* AppDelegate.swift */; };
-		82CF69941D912B2C00890864 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CF69931D912B2C00890864 /* ViewController.swift */; };
 		82CF69971D912B2C00890864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CF69951D912B2C00890864 /* Main.storyboard */; };
 		82CF69991D912B2C00890864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CF69981D912B2C00890864 /* Assets.xcassets */; };
 		82CF699C1D912B2C00890864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CF699A1D912B2C00890864 /* LaunchScreen.storyboard */; };
@@ -16,9 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		829A53B51D9273DF00755DF4 /* spotify.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = spotify.mp4; sourceTree = "<group>"; };
 		82CF698E1D912B2C00890864 /* Project 06 - VideoBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 06 - VideoBackground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CF69911D912B2C00890864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		82CF69931D912B2C00890864 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		82CF69961D912B2C00890864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82CF69981D912B2C00890864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82CF699B1D912B2C00890864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,8 +55,8 @@
 		82CF69901D912B2C00890864 /* Project 06 - VideoBackground */ = {
 			isa = PBXGroup;
 			children = (
+				829A53B51D9273DF00755DF4 /* spotify.mp4 */,
 				82CF69911D912B2C00890864 /* AppDelegate.swift */,
-				82CF69931D912B2C00890864 /* ViewController.swift */,
 				82CF69951D912B2C00890864 /* Main.storyboard */,
 				82CF69981D912B2C00890864 /* Assets.xcassets */,
 				82CF699A1D912B2C00890864 /* LaunchScreen.storyboard */,
@@ -141,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				82CF69A81D912D2D00890864 /* VideoBackgroundViewController.swift in Sources */,
-				82CF69941D912B2C00890864 /* ViewController.swift in Sources */,
 				82CF69921D912B2C00890864 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +302,7 @@
 				82CF69A21D912B2C00890864 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
