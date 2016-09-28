@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func requestBtnClicked(sender: AnyObject) {
+    @IBAction func requestBtnClicked(_ sender: AnyObject) {
         let array = self.sendRequest()
         
         if array != nil
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func clearBtnClicked(sender: AnyObject) {
+    @IBAction func clearBtnClicked(_ sender: AnyObject) {
         
         self.hostLabel.text = "Host:"
         self.languageLabel.text = "Accept Language: "
@@ -47,13 +47,13 @@ class ViewController: UIViewController {
     
     func sendRequest() -> Array<String>?
     {
-        let url = NSURL(string: "http://httpbin.org/get")
-        let request: NSURLRequest = NSURLRequest(URL: url!)
-        let response: AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil
+        let url = URL(string: "http://httpbin.org/get")
+        let request: URLRequest = URLRequest(url: url!)
+        let response: AutoreleasingUnsafeMutablePointer<URLResponse?>? = nil
         
         do
         {
-            let data:NSData = try NSURLConnection.sendSynchronousRequest(request, returningResponse: response)
+            let data:Data = try NSURLConnection.sendSynchronousRequest(request, returning: response)
             let results = self.parseJSONToString(data)
             if results != nil
             {
@@ -68,19 +68,19 @@ class ViewController: UIViewController {
     }
     
     
-    func parseJSONToString(data:NSData) -> Array<String>?
+    func parseJSONToString(_ data:Data) -> Array<String>?
     {
         var results = Array<String>()
         
         do {
-            let entry = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as! NSDictionary
+            let entry = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
             
-            let headers = entry.valueForKey("headers") as! NSDictionary
-            let host = headers.valueForKey("Host") as! String
-            let acceptLanguage = headers.valueForKey("Accept-Language") as! String
+            let headers = entry.value(forKey: "headers") as! NSDictionary
+            let host = headers.value(forKey: "Host") as! String
+            let acceptLanguage = headers.value(forKey: "Accept-Language") as! String
             
-            let origin = entry.valueForKey("origin") as! String
-            let url = entry.valueForKey("url") as! String
+            let origin = entry.value(forKey: "origin") as! String
+            let url = entry.value(forKey: "url") as! String
             
             results.append(host)
             results.append(acceptLanguage)

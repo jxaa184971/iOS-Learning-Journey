@@ -25,16 +25,16 @@ class RotationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         spin()
     }
     
     func spin()
     {
-        UIView.animateWithDuration(1, delay: 0, options: .CurveLinear, animations:
+        UIView.animate(withDuration: 1, delay: 0, options: .curveLinear, animations:
             {
-                self.greenSquare.transform = CGAffineTransformRotate(self.greenSquare.transform, CGFloat(M_PI))
+                self.greenSquare.transform = self.greenSquare.transform.rotated(by: CGFloat(M_PI))
             }, completion: {(completed) -> Void in
                 self.spin()    //在comletion里面调用自己 就可以无限循环下去
         })

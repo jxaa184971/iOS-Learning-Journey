@@ -34,23 +34,23 @@ class PositionViewController: UIViewController {
     }
     
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         // animations: 后面跟的是一个block
-        UIView.animateWithDuration(1, animations: {
+        UIView.animate(withDuration: 1, animations: {
                 // 蓝色方块的中心的x坐标 变为整个view的宽度减去蓝色方块的中心X的坐标(就是把蓝色方块移动到右边对称的位置)
                 self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
             })
         
         // options里面可以给动画加上特效, 这里选择没有特殊的动画效果
-        UIView.animateWithDuration(1, delay: 0.5, options: .TransitionNone, animations: {
+        UIView.animate(withDuration: 1, delay: 0.5, options: [], animations: {
             // 红色方块移动到下方
                 self.redSquare.center.y = self.view.bounds.height - self.redSquare.center.y
             }, completion: nil)
         
 
         
-        UIView.animateWithDuration(1, delay: 1, options: .TransitionNone, animations: {
+        UIView.animate(withDuration: 1, delay: 1, options: [], animations: {
             // 绿色方块移动到对角
             self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
             self.greenSquare.center.y = self.view.bounds.height - self.greenSquare.center.y

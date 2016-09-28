@@ -25,9 +25,9 @@ class OpacityViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        UIView.animateWithDuration(2, animations: {
+        UIView.animate(withDuration: 2, animations: {
             self.greenSquare.alpha = 0.1
         })
         

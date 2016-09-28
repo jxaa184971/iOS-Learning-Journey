@@ -26,11 +26,11 @@ class ColorViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        UIView.animateWithDuration(1, animations: {
-            self.square.backgroundColor = UIColor.yellowColor()
+        UIView.animate(withDuration: 1, animations: {
+            self.square.backgroundColor = UIColor.yellow
         })
     }
 

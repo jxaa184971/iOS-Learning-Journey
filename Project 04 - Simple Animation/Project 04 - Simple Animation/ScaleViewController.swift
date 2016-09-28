@@ -25,12 +25,12 @@ class ScaleViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
         // 使用CGAffineTransformMakeScale方法来将图片放大为2倍
-        UIView.animateWithDuration(1, animations: {
-            self.greenSquare.transform = CGAffineTransformMakeScale(2.0, 2.0)
+        UIView.animate(withDuration: 1, animations: {
+            self.greenSquare.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
         })
         
     }

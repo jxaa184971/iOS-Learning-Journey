@@ -32,21 +32,21 @@ class RepeatViewController: UIViewController {
     }
     
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
         // 不重复动画
-        UIView.animateWithDuration(1, animations: {
+        UIView.animate(withDuration: 1, animations: {
             self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
         })
         
         // 重复动画 .Repeat选项
-        UIView.animateWithDuration(1, delay: 0, options: .Repeat, animations: {
+        UIView.animate(withDuration: 1, delay: 0, options: .repeat, animations: {
                 self.redSquare.center.x = self.view.bounds.width - self.redSquare.center.x
             }, completion: nil)
         
         // 自动反转动画 .AutoReverse选项 (为了动画效果这里与Repeat同时使用)
-        UIView.animateWithDuration(1, delay: 0, options: [.Repeat, .Autoreverse], animations: {
+        UIView.animate(withDuration: 1, delay: 0, options: [.repeat, .autoreverse], animations: {
             self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
             }, completion: nil)
     }

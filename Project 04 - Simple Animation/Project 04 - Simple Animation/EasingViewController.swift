@@ -34,26 +34,26 @@ class EasingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
         // CurveLinear 整个动画过程保持匀速
-        UIView.animateWithDuration(2, delay: 0, options: [.Repeat, .CurveLinear], animations: {
+        UIView.animate(withDuration: 2, delay: 0, options: [.repeat, .curveLinear], animations: {
             self.blueSquare.center.x = self.view.bounds.width - self.blueSquare.center.x
             }, completion: nil)
         
         // CurveEaseIn 前面部分缓慢 后面匀速
-        UIView.animateWithDuration(2, delay: 0, options: [.Repeat, .CurveEaseIn], animations: {
+        UIView.animate(withDuration: 2, delay: 0, options: [.repeat, .curveEaseIn], animations: {
             self.redSquare.center.x = self.view.bounds.width - self.redSquare.center.x
             }, completion: nil)
         
         // CurveEaseOut 前面部分匀速 后面缓慢
-        UIView.animateWithDuration(2, delay: 0, options: [.Repeat, .CurveEaseOut], animations: {
+        UIView.animate(withDuration: 2, delay: 0, options: [.repeat, .curveEaseOut], animations: {
             self.greenSquare.center.x = self.view.bounds.width - self.greenSquare.center.x
             }, completion: nil)
         
         // CurveEaseInOut 前面后面缓慢 中间匀速
-        UIView.animateWithDuration(2, delay: 0, options: [.Repeat, .CurveEaseInOut], animations: {
+        UIView.animate(withDuration: 2, delay: 0, options: [.repeat, .curveEaseInOut], animations: {
             self.brownSquare.center.x = self.view.bounds.width - self.brownSquare.center.x
             }, completion: nil)
     }

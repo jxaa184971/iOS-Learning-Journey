@@ -32,22 +32,22 @@ class SpringViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        UIView.animateWithDuration(2, animations: {
+        UIView.animate(withDuration: 2, animations: {
             self.blueSquare.center.y = 400
         })
         
         // 使用Spring弹簧特效
         // damping: 阻尼, 0~1之间的float数值, 数值越大 弹的次数越少
         // initialSpringVelocity 初始的速度
-        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: .TransitionNone, animations: {
+        UIView.animate(withDuration: 3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0, options: [], animations: {
             self.greenSquare.center.y = 400
             }, completion: nil)
         
         // 增加初始速度, 并减少阻尼
-        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 3, options: .TransitionNone, animations: {
+        UIView.animate(withDuration: 3, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 3, options: [], animations: {
             self.redSquare.center.y = 400
             }, completion: nil)
     }

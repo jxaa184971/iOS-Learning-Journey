@@ -27,11 +27,11 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         
         //设置气泡为看不见
-        self.bubble1.transform = CGAffineTransformMakeScale(0, 0)
-        self.bubble2.transform = CGAffineTransformMakeScale(0, 0)
-        self.bubble3.transform = CGAffineTransformMakeScale(0, 0)
-        self.bubble4.transform = CGAffineTransformMakeScale(0, 0)
-        self.bubble5.transform = CGAffineTransformMakeScale(0, 0)
+        self.bubble1.transform = CGAffineTransform(scaleX: 0, y: 0)
+        self.bubble2.transform = CGAffineTransform(scaleX: 0, y: 0)
+        self.bubble3.transform = CGAffineTransform(scaleX: 0, y: 0)
+        self.bubble4.transform = CGAffineTransform(scaleX: 0, y: 0)
+        self.bubble5.transform = CGAffineTransform(scaleX: 0, y: 0)
         
         self.drawBackgroundImage()
         self.drawTextfield()
@@ -42,7 +42,7 @@ class LogInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
         //隐藏标题
@@ -66,12 +66,13 @@ class LogInViewController: UIViewController {
     {
         let image = UIImage(named: "background")!
         //以下方法为将背景图片铺满屏幕
-        UIGraphicsBeginImageContextWithOptions(CGSizeMake(self.view.bounds.width, self.view.bounds.height), false, 0.0);
-        image.drawInRect(CGRectMake(0, 0, self.view.bounds.width, self.view.bounds.height))
+        
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: self.view.bounds.width, height: self.view.bounds.height), false, 0.0);
+        image.draw(in: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        self.view.backgroundColor = UIColor(patternImage: newImage)
+        self.view.backgroundColor = UIColor(patternImage: newImage!)
     }
     
     // 设置textfield
@@ -79,19 +80,19 @@ class LogInViewController: UIViewController {
     {
         // 为textfield增加leftView 用于显示icon
         let imageView = UIImageView(image: UIImage(named: "social"))
-        imageView.frame = CGRectMake(7.5, 7.5, 25, 25)
-        let leftView = UIView(frame: CGRectMake(0, 0, 40, 40))
+        imageView.frame = CGRect(x: 7.5, y: 7.5, width: 25, height: 25)
+        let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         leftView.addSubview(imageView)
         self.usernameInput.leftView = leftView
-        self.usernameInput.leftViewMode = .Always
+        self.usernameInput.leftViewMode = .always
         
         // 密码的textfield也是同理
         let imageView2 = UIImageView(image: UIImage(named: "keyhole"))
-        imageView2.frame = CGRectMake(7.5, 7.5, 25, 25)
-        let leftView2 = UIView(frame: CGRectMake(0, 0, 40, 40))
+        imageView2.frame = CGRect(x: 7.5, y: 7.5, width: 25, height: 25)
+        let leftView2 = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         leftView2.addSubview(imageView2)
         self.passwordInput.leftView = leftView2
-        self.passwordInput.leftViewMode = .Always
+        self.passwordInput.leftViewMode = .always
     
         
     }
@@ -99,18 +100,18 @@ class LogInViewController: UIViewController {
     //气泡的动画效果
     func animateBubble()
     {
-        UIView.animateWithDuration(0.5, delay: 0.3, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: .TransitionNone, animations: {
-                self.bubble1.transform = CGAffineTransformMakeScale(1, 1)
-                self.bubble4.transform = CGAffineTransformMakeScale(1, 1)
-                self.bubble5.transform = CGAffineTransformMakeScale(1, 1)
+        UIView.animate(withDuration: 0.5, delay: 0.3, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: [], animations: {
+                self.bubble1.transform = CGAffineTransform(scaleX: 1, y: 1)
+                self.bubble4.transform = CGAffineTransform(scaleX: 1, y: 1)
+                self.bubble5.transform = CGAffineTransform(scaleX: 1, y: 1)
             }, completion: nil)
         
-        UIView.animateWithDuration(0.5, delay: 0.4, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: .TransitionNone, animations: {
-            self.bubble2.transform = CGAffineTransformMakeScale(1, 1)
+        UIView.animate(withDuration: 0.5, delay: 0.4, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: [], animations: {
+            self.bubble2.transform = CGAffineTransform(scaleX: 1, y: 1)
             }, completion: nil)
         
-        UIView.animateWithDuration(0.5, delay: 0.5, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: .TransitionNone, animations: {
-            self.bubble3.transform = CGAffineTransformMakeScale(1, 1)
+        UIView.animate(withDuration: 0.5, delay: 0.5, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: [], animations: {
+            self.bubble3.transform = CGAffineTransform(scaleX: 1, y: 1)
             }, completion: nil)
     }
     
@@ -118,7 +119,7 @@ class LogInViewController: UIViewController {
     func animateTitle()
     {
         self.titleLabel.center.y = self.view.bounds.height/2 - 180
-        UIView.animateWithDuration(0.8, delay: 0.3, options: .CurveEaseOut, animations: {
+        UIView.animate(withDuration: 0.8, delay: 0.3, options: .curveEaseOut, animations: {
                 self.titleLabel.center.x = self.view.bounds.width/2
             }, completion: nil)
     }
@@ -126,11 +127,11 @@ class LogInViewController: UIViewController {
     // 输入框的动画效果
     func animateTextfield()
     {
-        UIView.animateWithDuration(0.8, delay: 0.4, options: .CurveEaseOut, animations: {
+        UIView.animate(withDuration: 0.8, delay: 0.4, options: .curveEaseOut, animations: {
             self.usernameInput.center.x = self.view.bounds.width/2
             }, completion: nil)
         
-        UIView.animateWithDuration(0.8, delay: 0.5, options: .CurveEaseOut, animations: {
+        UIView.animate(withDuration: 0.8, delay: 0.5, options: .curveEaseOut, animations: {
             self.passwordInput.center.x = self.view.bounds.width/2
             }, completion: nil)
     }
@@ -138,7 +139,7 @@ class LogInViewController: UIViewController {
     //按钮的动画效果
     func animateBtn()
     {
-        UIView.animateWithDuration(0.8, delay: 0.6, options: .CurveEaseOut, animations: {
+        UIView.animate(withDuration: 0.8, delay: 0.6, options: .curveEaseOut, animations: {
             self.logInBtn.center.x = self.view.bounds.width/2
             }, completion: nil)
     }

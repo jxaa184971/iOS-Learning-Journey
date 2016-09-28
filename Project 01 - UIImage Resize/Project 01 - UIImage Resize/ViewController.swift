@@ -32,7 +32,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         let annotationView = MKAnnotationView(annotation: self.annotation, reuseIdentifier: "annotation")
         if self.clicked == true
         {
@@ -46,7 +46,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
     
     
-    @IBAction func buttonClicked(sender: AnyObject) {
+    @IBAction func buttonClicked(_ sender: AnyObject) {
         self.clicked = true
         self.mapView.removeAnnotation(self.annotation)
         
@@ -54,16 +54,16 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
     
     // resize uiimage
-    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
+    func resizeImage(_ image: UIImage, newWidth: CGFloat) -> UIImage {
         let scale = newWidth / image.size.width
         let newHeight = image.size.height * scale
         
-        UIGraphicsBeginImageContextWithOptions(CGSizeMake(newWidth, newHeight), false, 0.0);
-        image.drawInRect(CGRectMake(0, 0, newWidth, newHeight))
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: newWidth, height: newHeight), false, 0.0);
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return newImage
+        return newImage!
     }
 
 }
