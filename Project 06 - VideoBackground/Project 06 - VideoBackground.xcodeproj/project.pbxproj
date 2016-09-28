@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82B1993C1D9B99C7007AF859 /* Bigbang.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 82B1993B1D9B99C7007AF859 /* Bigbang.mp4 */; };
 		82CF69921D912B2C00890864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CF69911D912B2C00890864 /* AppDelegate.swift */; };
 		82CF69971D912B2C00890864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CF69951D912B2C00890864 /* Main.storyboard */; };
 		82CF69991D912B2C00890864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CF69981D912B2C00890864 /* Assets.xcassets */; };
@@ -15,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		829A53B51D9273DF00755DF4 /* spotify.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = spotify.mp4; sourceTree = "<group>"; };
+		82B1993B1D9B99C7007AF859 /* Bigbang.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bigbang.mp4; sourceTree = "<group>"; };
 		82CF698E1D912B2C00890864 /* Project 06 - VideoBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 06 - VideoBackground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CF69911D912B2C00890864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82CF69961D912B2C00890864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +56,7 @@
 		82CF69901D912B2C00890864 /* Project 06 - VideoBackground */ = {
 			isa = PBXGroup;
 			children = (
-				829A53B51D9273DF00755DF4 /* spotify.mp4 */,
+				82B1993B1D9B99C7007AF859 /* Bigbang.mp4 */,
 				82CF69911D912B2C00890864 /* AppDelegate.swift */,
 				82CF69951D912B2C00890864 /* Main.storyboard */,
 				82CF69981D912B2C00890864 /* Assets.xcassets */,
@@ -129,6 +130,7 @@
 				82CF699C1D912B2C00890864 /* LaunchScreen.storyboard in Resources */,
 				82CF69991D912B2C00890864 /* Assets.xcassets in Resources */,
 				82CF69971D912B2C00890864 /* Main.storyboard in Resources */,
+				82B1993C1D9B99C7007AF859 /* Bigbang.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

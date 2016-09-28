@@ -69,6 +69,8 @@ class VideoBackgroundViewController: UIViewController {
         }
     }
     
+    
+    
     @IBOutlet var logoView: UIImageView!
     @IBOutlet var logInBtn: UIButton!
     @IBOutlet var signUpBtn: UIButton!
@@ -77,16 +79,20 @@ class VideoBackgroundViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //let url = URL(fileURLWithPath: Bundle.main.path(forResource: "spotify", ofType: "mp4")!)
-        let url = URL(string: "http://static.tripbe.com/videofiles/20121214/9533522808.f4v.mp4")
+        // 添加视频进入项目时需要勾上add to target, 否则会找不到视频路径
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "Bigbang", ofType: "mp4")!)
         
         self.videoFrame = self.view.frame
         self.alwaysRepeat = true
-        self.sound = false
+        self.sound = true
         self.startTime = 1.0
         self.alpha = 0.8
         self.contentUrl = url
-        //view.isUserInteractionEnabled = false
+        
+        // 将视频画面铺满整个屏幕
+        self.videoPlayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        // 将播放器的视图设置为不可交互
+        self.videoPlayer.view.isUserInteractionEnabled = false
     }
     
     override open func viewDidAppear(_ animated: Bool) {
