@@ -191,4 +191,4 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 ###Project 06 - Video Background
 此项目模仿Spotify公司实现了登录界面的视频背景.
 
-![project06](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2005%20-%20Log%20In%20Animation/Project%2005.gif)
+![project06](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2006%20-%20VideoBackground/Project%2006.gif)
