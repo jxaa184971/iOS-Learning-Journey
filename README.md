@@ -8,6 +8,7 @@
     - [Project 03 - Splash Launching](#project-03---splash-launching)    
     - [Project 04 - Simple Animation](#project-04---simple-animation)
     - [Project 05 - Log In Animation](#project-05---log-in-animation)
+    - [Project 06 - Video Background](#project-06---video-background)
 
 <br\><br\>
 
@@ -185,3 +186,9 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 此项目为实现一些登录界面的动画效果, 让用户交互体验提高.
 
 ![project05](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2005%20-%20Log%20In%20Animation/Project%2005.gif)
+
+
+###Project 06 - Video Background
+此项目模仿Spotify公司实现了登录界面的视频背景.
+
+![project06](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2005%20-%20Log%20In%20Animation/Project%2005.gif)
