@@ -9,6 +9,7 @@
     - [Project 04 - Simple Animation](#project-04---simple-animation)
     - [Project 05 - Log In Animation](#project-05---log-in-animation)
     - [Project 06 - Video Background](#project-06---video-background)
+    - [Project 07 - Custom Segue](#project-07---custom-segue)
 
 <br\><br\>
 
@@ -192,3 +193,9 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 此项目模仿Spotify公司实现了登录界面的视频背景.
 
 ![project06](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2006%20-%20VideoBackground/Project%2006.gif)
+
+###Project 07 - Custom Segue
+此项目实现了自定义Segue及Unwind Segue. 
+包括UIStoryboardSegue的实现, 页面的自定义动画跳转, 手势的添加等.
+
+![project07](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2007%20-%20Custom%20Segue/Project%2007.gif)
