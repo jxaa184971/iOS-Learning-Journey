@@ -73,11 +73,24 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Left ⬅️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwB-OY-Mvz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3mp-hN-TeI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.36470588240000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BwB-OY-Mvz" firstAttribute="leading" secondItem="YAf-eh-QiA" secondAttribute="leadingMargin" id="2VT-qY-M3U"/>
+                            <constraint firstItem="BwB-OY-Mvz" firstAttribute="centerY" secondItem="YAf-eh-QiA" secondAttribute="centerY" id="RFI-KM-fl9"/>
+                            <constraint firstItem="BwB-OY-Mvz" firstAttribute="trailing" secondItem="YAf-eh-QiA" secondAttribute="trailingMargin" id="iBC-8a-yTP"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <segue destination="oqb-vg-sSW" kind="unwind" identifier="firstSegueUnwind" animates="NO" unwindAction="returnFromSegueActionsWithSender:" id="a1c-ft-5Mg"/>
+                        <segue destination="oqb-vg-sSW" kind="unwind" identifier="firstUnwindSegue" unwindAction="unwindFromViewControllerWithSender:" id="Wpq-Sk-gRc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKW-AI-BLL" userLabel="First Responder" sceneMemberID="firstResponder"/>

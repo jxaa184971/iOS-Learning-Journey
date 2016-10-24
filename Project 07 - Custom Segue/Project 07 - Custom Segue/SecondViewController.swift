@@ -9,12 +9,12 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(SecondViewController.showFirstViewController))
-        swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.down
+        swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeGestureRecognizer)
     }
 
@@ -25,9 +25,11 @@ class SecondViewController: UIViewController {
     
     func showFirstViewController() {
         print("Gesture Recognized")
-        self.performSegue(withIdentifier: "firstSegueUnwind", sender: self)
+        self.performSegue(withIdentifier: "firstUnwindSegue", sender: self)
         print("Gesture Finished")
     }
+    
+
 
     /*
     // MARK: - Navigation

@@ -31,13 +31,25 @@ class FirstViewController: UIViewController {
         self.performSegue(withIdentifier: "firstSegue", sender: self)
     }
     
-    @IBAction func returnFromSegueActions(sender: UIStoryboardSegue) {
+    /* 
+     * Unwind Seuge需要你提供一个IBAction方法在你需要回跳的ViewController里
+     * 参数sender必须是UIStoryboardSegue类型
+     * 可以在storyboard里按住control拖拽ViewController到Exit连接到此IBAction
+     */
+    @IBAction func unwindFromViewController(sender: UIStoryboardSegue) {
         print("Return From Segue")
     }
     
+    /*
+     * 正向的自定义segue可以直接在storyboard里面设置, 而unwind segue则需要手动提供segue实例
+     * 实现方法为重写 segueForUnwinding方法来执行自定义Unwind Segue
+     */
     override func segueForUnwinding(to toViewController: UIViewController, from fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
         print("Segue For Unwinding")
-        if identifier == "firstSegueUnwind" {
+        
+        if identifier == "firstUnwindSegue"
+        {
+            print("Segue For Unwinding")
             let unwindSegue = FirstSegueUnwind(identifier: identifier,
                                                source: fromViewController,
                                                destination: toViewController,
@@ -49,6 +61,8 @@ class FirstViewController: UIViewController {
     
         return super.segueForUnwinding(to: toViewController, from: fromViewController, identifier: identifier)!
     }
+    
+    
     
     /*
     // MARK: - Navigation
