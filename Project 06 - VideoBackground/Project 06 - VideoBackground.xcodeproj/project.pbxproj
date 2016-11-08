@@ -99,7 +99,7 @@
 				TargetAttributes = {
 					82CF698D1D912B2C00890864 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = CQ3QHZAB4D;
+						DevelopmentTeam = 3L5M8EX7ZW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -263,7 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CQ3QHZAB4D;
+				DEVELOPMENT_TEAM = 3L5M8EX7ZW;
 				INFOPLIST_FILE = "Project 06 - VideoBackground/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamie.Project-06---VideoBackground";
@@ -276,7 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CQ3QHZAB4D;
+				DEVELOPMENT_TEAM = 3L5M8EX7ZW;
 				INFOPLIST_FILE = "Project 06 - VideoBackground/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jamie.Project-06---VideoBackground";

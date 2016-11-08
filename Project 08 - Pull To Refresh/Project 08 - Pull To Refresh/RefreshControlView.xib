@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RefreshControllCustomView" customModule="Project_08___Pull_To_Refresh" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Pjs-ht-0ZI">
+                    <rect key="frame" x="127" y="11" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="a33-PJ-4YZ"/>
+                        <constraint firstAttribute="width" constant="28" id="hT4-BY-pKL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRq-TZ-HBZ">
+                    <rect key="frame" x="163" y="15" width="204" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="zdC-Yb-Bty"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Pjs-ht-0ZI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="Lu3-zU-Aqe"/>
+                <constraint firstItem="bRq-TZ-HBZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="Uqf-s3-Fib"/>
+                <constraint firstItem="bRq-TZ-HBZ" firstAttribute="leading" secondItem="Pjs-ht-0ZI" secondAttribute="trailing" constant="8" id="WQA-TS-ber"/>
+                <constraint firstAttribute="trailing" secondItem="bRq-TZ-HBZ" secondAttribute="trailing" constant="8" id="fml-mm-yWI"/>
+                <constraint firstItem="Pjs-ht-0ZI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-46.5" id="qgi-xk-D4a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="freshLabel" destination="bRq-TZ-HBZ" id="kel-uK-eAC"/>
+                <outlet property="imgView" destination="Pjs-ht-0ZI" id="zpZ-wN-bvN"/>
+            </connections>
+            <point key="canvasLocation" x="-76.5" y="-164"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow" width="64" height="64"/>
+    </resources>
+</document>

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "829306961D215B1400FF7C65"
-               BuildableName = "Project 01 - UIImage Resize.app"
-               BlueprintName = "Project 01 - UIImage Resize"
-               ReferencedContainer = "container:Project 01 - UIImage Resize.xcodeproj">
+               BlueprintIdentifier = "827F7D171DD18D3F00EF74AD"
+               BuildableName = "Project 08 - Pull To Refresh.app"
+               BlueprintName = "Project 08 - Pull To Refresh"
+               ReferencedContainer = "container:Project 08 - Pull To Refresh.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "829306961D215B1400FF7C65"
-            BuildableName = "Project 01 - UIImage Resize.app"
-            BlueprintName = "Project 01 - UIImage Resize"
-            ReferencedContainer = "container:Project 01 - UIImage Resize.xcodeproj">
+            BlueprintIdentifier = "827F7D171DD18D3F00EF74AD"
+            BuildableName = "Project 08 - Pull To Refresh.app"
+            BlueprintName = "Project 08 - Pull To Refresh"
+            ReferencedContainer = "container:Project 08 - Pull To Refresh.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "829306961D215B1400FF7C65"
-            BuildableName = "Project 01 - UIImage Resize.app"
-            BlueprintName = "Project 01 - UIImage Resize"
-            ReferencedContainer = "container:Project 01 - UIImage Resize.xcodeproj">
+            BlueprintIdentifier = "827F7D171DD18D3F00EF74AD"
+            BuildableName = "Project 08 - Pull To Refresh.app"
+            BlueprintName = "Project 08 - Pull To Refresh"
+            ReferencedContainer = "container:Project 08 - Pull To Refresh.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "829306961D215B1400FF7C65"
-            BuildableName = "Project 01 - UIImage Resize.app"
-            BlueprintName = "Project 01 - UIImage Resize"
-            ReferencedContainer = "container:Project 01 - UIImage Resize.xcodeproj">
+            BlueprintIdentifier = "827F7D171DD18D3F00EF74AD"
+            BuildableName = "Project 08 - Pull To Refresh.app"
+            BlueprintName = "Project 08 - Pull To Refresh"
+            ReferencedContainer = "container:Project 08 - Pull To Refresh.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
