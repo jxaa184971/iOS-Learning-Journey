@@ -11,6 +11,7 @@
     - [Project 06 - Video Background](#project-06---video-background)
     - [Project 07 - Custom Segue](#project-07---custom-segue)
     - [Project 08 - Pull To Refresh](#project-08---pull-to-refresh)
+    - [Project 09 - Banner](#project-09---banner)
 <br\><br\>
 
 ### Project 01 - UIImage Resize
@@ -205,3 +206,9 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 
 ![project08](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2008%20-%20Pull%20To%20Refresh/Project%2008.gif)
 
+###Project 09 - Banner
+此项目实现了轮播头条的效果.
+利用UICollectionView, 采用N+2的方式实现无限翻转的轮播效果. 
+了解了UICollectionView, UIPageControl的使用方法.
+
+![project09](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2009%20-%20Banner/Project%2009.gif)
