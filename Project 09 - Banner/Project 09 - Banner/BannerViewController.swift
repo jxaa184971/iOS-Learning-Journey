@@ -21,6 +21,15 @@ class BannerViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        /*
+         * 实现原理为在原本的视图前加上最后一张图, 在原本的视图末尾加上第一张图
+         * 例如原本图片为 1,2,3,4 
+         * 实际使用的图片为 4,1,2,3,4,1
+         * 每当collectinView划到第一张图(4)时, 自动跳转到倒数第二张图(4). 
+         * 每当collectinView划到最后一张图(1)时, 自动跳转到第二张图(1) 
+         * 让用户产生无限轮播的错觉. 其实一共就只有6张图片在翻转
+         */
+        
         bannerDataArray = ["image1.jpg","image2.jpg","image3.jpg","image4.jpg"]
         // Do any additional setup after loading the view.
         bannerCollectionDataArray = bannerDataArray
