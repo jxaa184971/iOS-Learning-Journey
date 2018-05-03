@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D344701209AE13F00203940 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D344700209AE13F00203940 /* AppDelegate.m */; };
+		7D344707209AE13F00203940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D344705209AE13F00203940 /* Main.storyboard */; };
+		7D344709209AE14000203940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D344708209AE14000203940 /* Assets.xcassets */; };
+		7D34470C209AE14000203940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D34470A209AE14000203940 /* LaunchScreen.storyboard */; };
+		7D34470F209AE14000203940 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D34470E209AE14000203940 /* main.m */; };
+		7D344719209AE14100203940 /* Project_12___UILocalizedIndexedCollationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D344718209AE14100203940 /* Project_12___UILocalizedIndexedCollationTests.m */; };
+		7D344724209AE14100203940 /* Project_12___UILocalizedIndexedCollationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D344723209AE14100203940 /* Project_12___UILocalizedIndexedCollationUITests.m */; };
+		7D344733209AE18400203940 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D344732209AE18400203940 /* TableViewController.m */; };
+		7D344736209AE4EB00203940 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D344735209AE4EB00203940 /* Person.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D344715209AE14100203940 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D3446F4209AE13F00203940 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D3446FB209AE13F00203940;
+			remoteInfo = "Project 12 - UILocalizedIndexedCollation";
+		};
+		7D344720209AE14100203940 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D3446F4209AE13F00203940 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D3446FB209AE13F00203940;
+			remoteInfo = "Project 12 - UILocalizedIndexedCollation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D3446FC209AE13F00203940 /* Project 12 - UILocalizedIndexedCollation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 12 - UILocalizedIndexedCollation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3446FF209AE13F00203940 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7D344700209AE13F00203940 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7D344706209AE13F00203940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D344708209AE14000203940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D34470B209AE14000203940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D34470D209AE14000203940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D34470E209AE14000203940 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D344714209AE14100203940 /* Project 12 - UILocalizedIndexedCollationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 12 - UILocalizedIndexedCollationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D344718209AE14100203940 /* Project_12___UILocalizedIndexedCollationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Project_12___UILocalizedIndexedCollationTests.m"; sourceTree = "<group>"; };
+		7D34471A209AE14100203940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D34471F209AE14100203940 /* Project 12 - UILocalizedIndexedCollationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 12 - UILocalizedIndexedCollationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D344723209AE14100203940 /* Project_12___UILocalizedIndexedCollationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Project_12___UILocalizedIndexedCollationUITests.m"; sourceTree = "<group>"; };
+		7D344725209AE14100203940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D344731209AE18400203940 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		7D344732209AE18400203940 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		7D344734209AE4EB00203940 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		7D344735209AE4EB00203940 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D3446F9209AE13F00203940 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D344711209AE14100203940 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D34471C209AE14100203940 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D3446F3209AE13F00203940 = {
+			isa = PBXGroup;
+			children = (
+				7D3446FE209AE13F00203940 /* Project 12 - UILocalizedIndexedCollation */,
+				7D344717209AE14100203940 /* Project 12 - UILocalizedIndexedCollationTests */,
+				7D344722209AE14100203940 /* Project 12 - UILocalizedIndexedCollationUITests */,
+				7D3446FD209AE13F00203940 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D3446FD209AE13F00203940 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D3446FC209AE13F00203940 /* Project 12 - UILocalizedIndexedCollation.app */,
+				7D344714209AE14100203940 /* Project 12 - UILocalizedIndexedCollationTests.xctest */,
+				7D34471F209AE14100203940 /* Project 12 - UILocalizedIndexedCollationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D3446FE209AE13F00203940 /* Project 12 - UILocalizedIndexedCollation */ = {
+			isa = PBXGroup;
+			children = (
+				7D3446FF209AE13F00203940 /* AppDelegate.h */,
+				7D344700209AE13F00203940 /* AppDelegate.m */,
+				7D344705209AE13F00203940 /* Main.storyboard */,
+				7D344708209AE14000203940 /* Assets.xcassets */,
+				7D34470A209AE14000203940 /* LaunchScreen.storyboard */,
+				7D34470D209AE14000203940 /* Info.plist */,
+				7D34470E209AE14000203940 /* main.m */,
+				7D344731209AE18400203940 /* TableViewController.h */,
+				7D344732209AE18400203940 /* TableViewController.m */,
+				7D344734209AE4EB00203940 /* Person.h */,
+				7D344735209AE4EB00203940 /* Person.m */,
+			);
+			path = "Project 12 - UILocalizedIndexedCollation";
+			sourceTree = "<group>";
+		};
+		7D344717209AE14100203940 /* Project 12 - UILocalizedIndexedCollationTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D344718209AE14100203940 /* Project_12___UILocalizedIndexedCollationTests.m */,
+				7D34471A209AE14100203940 /* Info.plist */,
+			);
+			path = "Project 12 - UILocalizedIndexedCollationTests";
+			sourceTree = "<group>";
+		};
+		7D344722209AE14100203940 /* Project 12 - UILocalizedIndexedCollationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7D344723209AE14100203940 /* Project_12___UILocalizedIndexedCollationUITests.m */,
+				7D344725209AE14100203940 /* Info.plist */,
+			);
+			path = "Project 12 - UILocalizedIndexedCollationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D3446FB209AE13F00203940 /* Project 12 - UILocalizedIndexedCollation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D344728209AE14100203940 /* Build configuration list for PBXNativeTarget "Project 12 - UILocalizedIndexedCollation" */;
+			buildPhases = (
+				7D3446F8209AE13F00203940 /* Sources */,
+				7D3446F9209AE13F00203940 /* Frameworks */,
+				7D3446FA209AE13F00203940 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 12 - UILocalizedIndexedCollation";
+			productName = "Project 12 - UILocalizedIndexedCollation";
+			productReference = 7D3446FC209AE13F00203940 /* Project 12 - UILocalizedIndexedCollation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7D344713209AE14100203940 /* Project 12 - UILocalizedIndexedCollationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D34472B209AE14100203940 /* Build configuration list for PBXNativeTarget "Project 12 - UILocalizedIndexedCollationTests" */;
+			buildPhases = (
+				7D344710209AE14100203940 /* Sources */,
+				7D344711209AE14100203940 /* Frameworks */,
+				7D344712209AE14100203940 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D344716209AE14100203940 /* PBXTargetDependency */,
+			);
+			name = "Project 12 - UILocalizedIndexedCollationTests";
+			productName = "Project 12 - UILocalizedIndexedCollationTests";
+			productReference = 7D344714209AE14100203940 /* Project 12 - UILocalizedIndexedCollationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7D34471E209AE14100203940 /* Project 12 - UILocalizedIndexedCollationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D34472E209AE14100203940 /* Build configuration list for PBXNativeTarget "Project 12 - UILocalizedIndexedCollationUITests" */;
+			buildPhases = (
+				7D34471B209AE14100203940 /* Sources */,
+				7D34471C209AE14100203940 /* Frameworks */,
+				7D34471D209AE14100203940 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D344721209AE14100203940 /* PBXTargetDependency */,
+			);
+			name = "Project 12 - UILocalizedIndexedCollationUITests";
+			productName = "Project 12 - UILocalizedIndexedCollationUITests";
+			productReference = 7D34471F209AE14100203940 /* Project 12 - UILocalizedIndexedCollationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D3446F4209AE13F00203940 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Jamie;
+				TargetAttributes = {
+					7D3446FB209AE13F00203940 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					7D344713209AE14100203940 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 7D3446FB209AE13F00203940;
+					};
+					7D34471E209AE14100203940 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 7D3446FB209AE13F00203940;
+					};
+				};
+			};
+			buildConfigurationList = 7D3446F7209AE13F00203940 /* Build configuration list for PBXProject "Project 12 - UILocalizedIndexedCollation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D3446F3209AE13F00203940;
+			productRefGroup = 7D3446FD209AE13F00203940 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D3446FB209AE13F00203940 /* Project 12 - UILocalizedIndexedCollation */,
+				7D344713209AE14100203940 /* Project 12 - UILocalizedIndexedCollationTests */,
+				7D34471E209AE14100203940 /* Project 12 - UILocalizedIndexedCollationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D3446FA209AE13F00203940 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D34470C209AE14000203940 /* LaunchScreen.storyboard in Resources */,
+				7D344709209AE14000203940 /* Assets.xcassets in Resources */,
+				7D344707209AE13F00203940 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D344712209AE14100203940 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D34471D209AE14100203940 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D3446F8209AE13F00203940 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D34470F209AE14000203940 /* main.m in Sources */,
+				7D344733209AE18400203940 /* TableViewController.m in Sources */,
+				7D344736209AE4EB00203940 /* Person.m in Sources */,
+				7D344701209AE13F00203940 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D344710209AE14100203940 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D344719209AE14100203940 /* Project_12___UILocalizedIndexedCollationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D34471B209AE14100203940 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D344724209AE14100203940 /* Project_12___UILocalizedIndexedCollationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D344716209AE14100203940 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D3446FB209AE13F00203940 /* Project 12 - UILocalizedIndexedCollation */;
+			targetProxy = 7D344715209AE14100203940 /* PBXContainerItemProxy */;
+		};
+		7D344721209AE14100203940 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D3446FB209AE13F00203940 /* Project 12 - UILocalizedIndexedCollation */;
+			targetProxy = 7D344720209AE14100203940 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7D344705209AE13F00203940 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D344706209AE13F00203940 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7D34470A209AE14000203940 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D34470B209AE14000203940 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D344726209AE14100203940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7D344727209AE14100203940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D344729209AE14100203940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 12 - UILocalizedIndexedCollation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-12---UILocalizedIndexedCollation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D34472A209AE14100203940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 12 - UILocalizedIndexedCollation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-12---UILocalizedIndexedCollation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7D34472C209AE14100203940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 12 - UILocalizedIndexedCollationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-12---UILocalizedIndexedCollationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 12 - UILocalizedIndexedCollation.app/Project 12 - UILocalizedIndexedCollation";
+			};
+			name = Debug;
+		};
+		7D34472D209AE14100203940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 12 - UILocalizedIndexedCollationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-12---UILocalizedIndexedCollationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 12 - UILocalizedIndexedCollation.app/Project 12 - UILocalizedIndexedCollation";
+			};
+			name = Release;
+		};
+		7D34472F209AE14100203940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 12 - UILocalizedIndexedCollationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-12---UILocalizedIndexedCollationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Project 12 - UILocalizedIndexedCollation";
+			};
+			name = Debug;
+		};
+		7D344730209AE14100203940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 12 - UILocalizedIndexedCollationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-12---UILocalizedIndexedCollationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Project 12 - UILocalizedIndexedCollation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D3446F7209AE13F00203940 /* Build configuration list for PBXProject "Project 12 - UILocalizedIndexedCollation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D344726209AE14100203940 /* Debug */,
+				7D344727209AE14100203940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D344728209AE14100203940 /* Build configuration list for PBXNativeTarget "Project 12 - UILocalizedIndexedCollation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D344729209AE14100203940 /* Debug */,
+				7D34472A209AE14100203940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D34472B209AE14100203940 /* Build configuration list for PBXNativeTarget "Project 12 - UILocalizedIndexedCollationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D34472C209AE14100203940 /* Debug */,
+				7D34472D209AE14100203940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D34472E209AE14100203940 /* Build configuration list for PBXNativeTarget "Project 12 - UILocalizedIndexedCollationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D34472F209AE14100203940 /* Debug */,
+				7D344730209AE14100203940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D3446F4209AE13F00203940 /* Project object */;
+}
