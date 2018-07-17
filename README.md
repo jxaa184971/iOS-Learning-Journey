@@ -229,25 +229,25 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 核心代码: 
 ```swift
 func resetImagePosition(){
-        // 获取图片在window中的bounds
-        let cellBoundsInWindow = self.convert(self.picView.bounds, to: self.window)
+    // 获取图片在window中的bounds
+    let cellBoundsInWindow = self.convert(self.picView.bounds, to: self.window)
 
-        if (cellBoundsInWindow.origin.y <= ((self.window?.bounds.height)!-self.picView.bounds.height)/2) {
-            //当cell滑到图片顶端的时候，图片跟着cell一起上滑
-            return
-        }
-
-        // 获取图片在window中bounds的Y轴中心点
-        let cellCenterY = cellBoundsInWindow.midY
-        // 获取window的Y轴中心点
-        let windowCenterY = self.window?.center.y;
-
-        // 获取Y轴图片中心点和window中心点的offset
-        let offsetY = cellCenterY - windowCenterY!;
-        // 每次tableview滑动时，都需要重新设置UIImageView的transform，使其显示在window的中心
-        let transform = CGAffineTransform(translationX: 0, y: -offsetY)
-        self.picView.transform = transform;
+    if (cellBoundsInWindow.origin.y <= ((self.window?.bounds.height)!-self.picView.bounds.height)/2) {
+        //当cell滑到图片顶端的时候，图片跟着cell一起上滑
+        return
     }
+
+    // 获取图片在window中bounds的Y轴中心点
+    let cellCenterY = cellBoundsInWindow.midY
+    // 获取window的Y轴中心点
+    let windowCenterY = self.window?.center.y;
+
+    // 获取Y轴图片中心点和window中心点的offset
+    let offsetY = cellCenterY - windowCenterY!;
+    // 每次tableview滑动时，都需要重新设置UIImageView的transform，使其显示在window的中心
+    let transform = CGAffineTransform(translationX: 0, y: -offsetY)
+    self.picView.transform = transform;
+}
 ```
 
 ### Project 11 - QR Code
