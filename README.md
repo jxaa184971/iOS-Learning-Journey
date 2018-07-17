@@ -341,7 +341,7 @@ for (int index = 0; index < sectionTitlesCount; index++) {
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 ```
 
-</br>
+
 完成转场动画对象的实现后，需要对转场的VC进行实现。首先对需要实现转场动画的VC实现UINavigationControllerDelegate代理，并将VC所在UINavigationController的delegate设为自己。 
 ```objective-c 
 @interface ViewController ()<UINavigationControllerDelegate> 
