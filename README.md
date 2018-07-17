@@ -222,6 +222,8 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 ### Project 10 - Window Effect
 此项目实现了UITableView中的橱窗显示图片的效果. 
 
+![project10](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2010%20-%20Window%20Effect/Project%2010.gif)
+
 实现原理: 首先需要选择一张需要实现橱窗效果的图片, 其高度需要高于cell本身的高度, 将其放入cell中靠顶部显示. 每次用户滑动tablview时, 调动cell中自定义的方法. 该方法计算UIImageView中心点到window中心的距离(offset), 再通过修改UIImageView的transform将图片偏移-offset, 通过此方式使图片始终固定在window的中心. 再利用cell的clipsToBounds属性不显示超出cell的图片，从而最终达到橱窗的效果.
 
 核心代码: 
@@ -247,8 +249,6 @@ func resetImagePosition(){
         self.picView.transform = transform;
     }
 ```
-
-![project10](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2010%20-%20Window%20Effect/Project%2010.gif)
 
 ### Project 11 - QR Code
 
