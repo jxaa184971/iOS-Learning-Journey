@@ -215,12 +215,42 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 
 利用UICollectionView, 采用N+2的方式实现无限翻转的轮播效果. 了解了UICollectionView, UIPageControl的使用方法.
 
-简单的实现原理为：如果指定轮播的图片（或View）为5张，那么在UICollectionView的前面增加最后一张的图片（或View），最后增加第一张图片（或View）。最终UICollectionView的排列为：5 1 2 3 4 5 1。每次滑到首位（第一个5）时，通过代码移动到相同样式的倒数第二的位置（倒数第二个5）；滑到末位（最后一个1）时，通过代码移动到相应样式的第二个位置（第一个1）。用这样的方法来达到无限循环的效果。
+#### 实现原理
+如果指定轮播的图片(或View)为5张, 那么在UICollectionView的前面增加最后一张的图片(或View), 最后增加第一张图片(或View). 最终UICollectionView的排列为: 5 1 2 3 4 5 1. 每次滑到首位(第一个5)时, 通过代码移动到相同样式的倒数第二的位置(倒数第二个5); 滑到末位(最后一个1)时, 通过代码移动到相应样式的第二个位置(第一个1). 用这样的方法来达到无限循环的效果.
 
 ![project09](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2009%20-%20Banner/Project%2009.gif)
 
 ### Project 10 - Window Effect
+此项目实现了UITableView中的橱窗显示图片的效果. 
 
+![project10](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2010%20-%20Window%20Effect/Project%2010.gif)
+
+#### 实现原理
+首先需要选择一张需要实现橱窗效果的图片, 其高度需要高于cell本身的高度, 将其放入cell中靠顶部显示. 每次用户滑动tablview时, 调动cell中自定义的方法. 该方法计算UIImageView中心点到window中心的距离(offset), 再通过修改UIImageView的transform将图片偏移-offset, 通过此方式使图片始终固定在window的中心. 再利用cell的clipsToBounds属性不显示超出cell的图片，从而最终达到橱窗的效果.
+
+#### 核心代码
+```swift
+func resetImagePosition(){
+    // 获取图片在window中的bounds
+    let cellBoundsInWindow = self.convert(self.picView.bounds, to: self.window)
+
+    if (cellBoundsInWindow.origin.y <= ((self.window?.bounds.height)!-self.picView.bounds.height)/2) {
+        //当cell滑到图片顶端的时候，图片跟着cell一起上滑
+        return
+    }
+
+    // 获取图片在window中bounds的Y轴中心点
+    let cellCenterY = cellBoundsInWindow.midY
+    // 获取window的Y轴中心点
+    let windowCenterY = self.window?.center.y;
+
+    // 获取Y轴图片中心点和window中心点的offset
+    let offsetY = cellCenterY - windowCenterY!;
+    // 每次tableview滑动时，都需要重新设置UIImageView的transform，使其显示在window的中心
+    let transform = CGAffineTransform(translationX: 0, y: -offsetY)
+    self.picView.transform = transform;
+}
+```
 
 ### Project 11 - QR Code
 
