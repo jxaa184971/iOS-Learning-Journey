@@ -252,6 +252,21 @@ func resetImagePosition(){
 }
 ```
 
+将UIView绘制成UIImage
+```swift
+/* 将UIView绘制成UIImage */
+// 初始化绘图环境 opaque参数用来表示生成的图片是否不透明
+UIGraphicsBeginImageContextWithOptions(containerView.bounds.size, containerView.opaque, 0.0);
+// 将对应的UIView的layer渲染在绘图环境中
+[containerView.layer renderInContext:UIGraphicsGetCurrentContext()];
+// 将UIView中所有的view hierarchy绘制在环境中
+[containerView drawViewHierarchyInRect:containerView.bounds afterScreenUpdates:NO];
+// 获取绘制好的图片
+UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+// 结束绘图环境
+UIGraphicsEndImageContext();
+```
+
 ### Project 11 - QR Code
 此项目实现了将URL字符串转换成二维码的功能。项目中还附带了修改二维码颜色的代码，以及将UIView截屏成UIImage的代码。
 
