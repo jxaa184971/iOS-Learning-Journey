@@ -47,7 +47,7 @@ func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
 }
 ```
 
-<br\><br\>
+</br></br>
 
 ### Project 02 - HTTP Request and JSON
 发送HTTP同步请求及JSON格式的数据处理
@@ -128,7 +128,7 @@ func sendRequest() -> Array<String>?
         }
     }
 ```
-<br\><br\>
+</br></br>
 
 ### Project 03 - Splash Launching
 模仿Twitter的Lauching动画
