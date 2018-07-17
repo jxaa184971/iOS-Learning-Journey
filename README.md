@@ -330,7 +330,7 @@ for (int index = 0; index < sectionTitlesCount; index++) {
 
 </br>
 然后在此类中实现两个代理方法：
-</br>
+
 设置转场动画的时间
 
 `- (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext；`
