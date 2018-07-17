@@ -15,7 +15,7 @@
     - [Project 10 - Window Effect](#project-10---window-effect)
     - [Project 11 - QR Code](#project-11---qr-code)
     - [Project 12 - UILocalizedIndexedCollation](#project-12---uilocalizedindexedcollation)
-    - [Project 13 - AnimatedTransitioning](#project-11---animatedtransitioning)
+    - [Project 13 - AnimatedTransitioning](#project-13---animatedtransitioning)
 </br> </br>
 
 ### Project 01 - UIImage Resize
@@ -218,6 +218,7 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 ![project09](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2009%20-%20Banner/Project%2009.gif)
 
 ### Project 10 - Window Effect
+
 
 ### Project 11 - QR Code
 
