@@ -1,7 +1,7 @@
 # iOS Learning Journey
 - Personal iOS Learning Journey
 
-##目录(Table of Contents)
+## 目录(Table of Contents)
 - [iOS Learning Journey](#ios-learning-journey)
     - [Project 01 - UIImage Resize](#project-01---uiimage-resize)
     - [Project 02 - HTTP Request & JSON](#project-02---http-request-and-json)
@@ -12,7 +12,7 @@
     - [Project 07 - Custom Segue](#project-07---custom-segue)
     - [Project 08 - Pull To Refresh](#project-08---pull-to-refresh)
     - [Project 09 - Banner](#project-09---banner)
-<br\><br\>
+<br\> <br\>
 
 ### Project 01 - UIImage Resize
 在使用图片的时候, 有时候图片的原本像素太大, 导致显示的时候图片显示异常. 例如使用地图自定义大头针的时候, 如果图片像素过大, 大头针会铺满整个屏幕, 直接缩小修改图片的大小又会导致大头针图像变得模糊. 这时候就需要更改UIImage到所需要的像素.
@@ -169,44 +169,44 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 }
 ```
 
-###Project 04 - Simple Animation
+### Project 04 - Simple Animation
 本项目介绍了利用`UIView.animateWithDuration()`方法来实现一些简单的动画, 包括位置的改变, 透明度的改变, 大小的改变, 颜色的改变已经旋转. 效果图如下:
 
-#####位置
+##### 位置
 ![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Position.gif)
-#####透明度
+##### 透明度
 ![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Opacity.gif)
-#####大小
+##### 大小
 ![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Scale.gif)
-#####颜色
+##### 颜色
 ![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Color.gif)
-#####旋转
+##### 旋转
 ![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Rotation.gif)
 
 
-###Project 05 - Log In Animation
+### Project 05 - Log In Animation
 此项目为实现一些登录界面的动画效果, 让用户交互体验提高.
 
 ![project05](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2005%20-%20Log%20In%20Animation/Project%2005.gif)
 
 
-###Project 06 - Video Background
+### Project 06 - Video Background
 此项目模仿Spotify公司实现了登录界面的视频背景.
 
 ![project06](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2006%20-%20VideoBackground/Project%2006.gif)
 
-###Project 07 - Custom Segue
+### Project 07 - Custom Segue
 此项目实现了自定义Segue及Unwind Segue. 
 包括UIStoryboardSegue的实现, 页面的自定义动画跳转, 手势的添加等.
 
 ![project07](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2007%20-%20Custom%20Segue/Project%2007.gif)
 
-###Project 08 - Pull To Refresh
+### Project 08 - Pull To Refresh
 此项目实现了TableView的下拉刷新效果
 
 ![project08](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2008%20-%20Pull%20To%20Refresh/Project%2008.gif)
 
-###Project 09 - Banner
+### Project 09 - Banner
 此项目实现了轮播头条的效果.
 利用UICollectionView, 采用N+2的方式实现无限翻转的轮播效果. 
 了解了UICollectionView, UIPageControl的使用方法.
