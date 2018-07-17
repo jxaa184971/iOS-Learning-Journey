@@ -291,5 +291,29 @@ UIGraphicsEndImageContext();
 ```
 
 ### Project 12 - UILocalizedIndexedCollation
+此项目实现了利用UILocalizedIndexedCollation来对姓名进行排列，以达到原生通讯录的效果。
+
+![project12](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2012%20-%20UILocalizedIndexedCollation/Project%2012.png)
+
+#### 实现原理
+首先通过`[self.localizedCollection sectionForObject:person collationStringSelector:@selector(name)]`方法对每一个person对象对name属性进行分类，根据首字母来进行分类. 比如"林丹", 首字母是L, 在A~Z中排第11(第一位是0), sectionNumber就为11. 然后再通过`[self.localizedCollection sortedArrayFromArray:personArrayForSection collationStringSelector:@selector(name)]`对每个字母所代表的section根据name属性对Array中每个person进行排序. 通过此方法，就能把所有的person对象进行分组排序。
+
+#### 核心代码
+```objective-c
+//将每个人按name分到某个index下
+for (Person *temp in tempPersonArray) {
+    //获取name属性的值所在的位置，比如"林丹"，首字母是L，在A~Z中排第11（第一位是0），sectionNumber就为11
+    NSInteger sectionNumber = [self.localizedCollection sectionForObject:temp collationStringSelector:@selector(name)];
+    NSMutableArray *sectionNames = newSectionsArray[sectionNumber];
+    [sectionNames addObject:temp];
+}
+
+//对每个section中的数组按照name属性排序
+for (int index = 0; index < sectionTitlesCount; index++) {
+    NSMutableArray *personArrayForSection = newSectionsArray[index];
+    NSArray *sortedPersonArrayForSection = [self.localizedCollection sortedArrayFromArray:personArrayForSection collationStringSelector:@selector(name)];
+    newSectionsArray[index] = sortedPersonArrayForSection;
+}
+```
 
 ### Project 13 - AnimatedTransitioning
