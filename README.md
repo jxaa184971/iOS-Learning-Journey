@@ -319,3 +319,6 @@ for (int index = 0; index < sectionTitlesCount; index++) {
 ```
 
 ### Project 13 - AnimatedTransitioning
+此项目实现了UINavigationController下页面跳转的自定义转场动画效果。
+
+![project13](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2013%20-%20AnimatedTransitioning/Project%2013.gif)
