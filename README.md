@@ -253,6 +253,28 @@ func resetImagePosition(){
 ```
 
 ### Project 11 - QR Code
+此项目实现了将URL字符串转换成二维码的功能。项目中还附带了修改二维码颜色的代码，以及将UIView截屏成UIImage的代码。
+
+![project11](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2011%20-%20QR%20Code/Project%2011.png)
+
+#### 核心代码
+```obj-c
+NSString *url = @"https://github.com/jxa184971";
+// 1. 创建一个二维码滤镜实例(CIFilter)
+CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+// 滤镜恢复默认设置
+[filter setDefaults];
+
+// 2. 给滤镜添加数据
+NSData *data = [url dataUsingEncoding:NSUTF8StringEncoding];
+// 将UTF-8编码的字符串数据传入inputMessage中，每个滤镜可以设置的参数都不同
+[filter setValue:data forKeyPath:@"inputMessage"];
+// 二维码容错级别选择H，容错级别：L（7%）、M（15%）、Q（25%）、H（30%）
+[filter setValue:@"H" forKey:@"inputCorrectionLevel"];
+
+// 3. 生成二维码
+CIImage *qrImage = [filter outputImage];
+```
 
 ### Project 12 - UILocalizedIndexedCollation
 
