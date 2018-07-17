@@ -213,10 +213,9 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 ### Project 09 - Banner
 此项目实现了轮播头条的效果.
 
-利用UICollectionView, 采用N+2的方式实现无限翻转的轮播效果. 
+利用UICollectionView, 采用N+2的方式实现无限翻转的轮播效果. 了解了UICollectionView, UIPageControl的使用方法.
 
 简单的实现原理为：如果指定轮播的图片（或View）为5张，那么在UICollectionView的前面增加最后一张的图片（或View），最后增加第一张图片（或View）。最终UICollectionView的排列为：5 1 2 3 4 5 1。每次滑到首位（第一个5）时，通过代码移动到相同样式的倒数第二的位置（倒数第二个5）；滑到末位（最后一个1）时，通过代码移动到相应样式的第二个位置（第一个1）。用这样的方法来达到无限循环的效果。
-了解了UICollectionView, UIPageControl的使用方法.
 
 ![project09](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2009%20-%20Banner/Project%2009.gif)
 
