@@ -322,3 +322,51 @@ for (int index = 0; index < sectionTitlesCount; index++) {
 此项目实现了UINavigationController下页面跳转的自定义转场动画效果。
 
 ![project13](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2013%20-%20AnimatedTransitioning/Project%2013.gif)
+
+#### 实现原理
+首先需要定义一个`@interface TransitionAnimation : NSObject <UIViewControllerAnimatedTransitioning>` NSObject实现UIViewControllerAnimatedTransitioning代理.
+
+然后在此类中实现两个代理方法：
+`- (NSTimeInterval)transitionDuration:(nullable id <UIViewControllerContextTransitioning>)transitionContext；`这个方法用来设置转场动画的时间。
+`- (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext`这个方法可以获取到转场动画的context，从中获取到转场前后的viewController用来实现具体的动画效果。
+
+完成转场动画对象的实现后，需要对转场的VC进行实现。首先对需要实现转场动画的VC实现以下代理`@interface ViewController ()<UINavigationControllerDelegate>`，并将VC所在UINavigationController的delegate设为自己。
+
+并且实现以下的方法，根据条件返回刚才我们定义好转场动画对象，即可实现转场动画效果。
+`-(id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC`
+
+#### 核心代码
+```objective-c
+- (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
+    //获取跳转前后的view
+    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+
+    //由于场景转换环境会自动添加fromVC到contrainer中，但是不会自动添加toVC，如果需要对toVC做动画特效需要自己手动添加。
+    [transitionContext.containerView addSubview:toVC.view];
+
+    //初始化toVC的alpha值为0
+    toVC.view.alpha = 0;
+
+    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+        toVC.view.alpha = 1;
+        fromVC.view.alpha = 0;
+    }completion:^(BOOL finished) {
+        fromVC.view.alpha = 1;
+        [transitionContext completeTransition:YES];
+    }];
+}
+```
+
+```objective-c
+-(id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
+    //根据情况不同，可以将跳转的方式为push还是pop，fromVC和toVC是什么来作为判断条件。
+    if ([fromVC isKindOfClass:[ViewController class]] && operation == UINavigationControllerOperationPush) {
+        TransitionAnimation *animation = [[TransitionAnimation alloc] init];
+        return animation;
+    }else {
+        //返回nil 会显示默认动画
+        return nil;
+    }
+}
+```
