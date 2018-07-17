@@ -258,7 +258,7 @@ func resetImagePosition(){
 ![project11](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2011%20-%20QR%20Code/Project%2011.png)
 
 #### 核心代码
-```obj-c
+```objective-c
 NSString *url = @"https://github.com/jxa184971";
 // 1. 创建一个二维码滤镜实例(CIFilter)
 CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
@@ -276,7 +276,7 @@ NSData *data = [url dataUsingEncoding:NSUTF8StringEncoding];
 CIImage *qrImage = [filter outputImage];
 ```
 将UIView绘制成UIImage
-```swift
+```objective-c
 /* 将UIView绘制成UIImage */
 // 初始化绘图环境 opaque参数用来表示生成的图片是否不透明
 UIGraphicsBeginImageContextWithOptions(containerView.bounds.size, containerView.opaque, 0.0);
