@@ -53,7 +53,7 @@
     self.effectView2 = [[UIVisualEffectView alloc] initWithEffect:effect2];
     self.effectView2.frame = CGRectMake(0, 300, [[UIScreen mainScreen] bounds].size.width, 100);
 
-    // 这种效果仅仅对与添加到contentView中的内容有效果
+    // 这种效果仅仅对与添加到contentView中的内容有效果, 在这里添加一个带有红色背景的UIView
     UIView *redView = [[UIView alloc]initWithFrame:self.effectView2.bounds];
     redView.backgroundColor = [UIColor redColor];
     redView.alpha = 0.8;
