@@ -14,6 +14,7 @@ iOS消息通知机制算是同步的，观察者只要向消息中心注册， �
 4. 发送通知和接收通知时需要提前知道通知名称，如果通知名称不一致，会出现不同步的情况
 5. 通知发出后，不能从观察者获得任何的反馈信息
 
+<br></br>
 ### 使用
 
 #### 1. 通过NSNotificationCenter注册通知NSNotification
@@ -33,21 +34,21 @@ iOS消息通知机制算是同步的，观察者只要向消息中心注册， �
 }
 ```
 回调方法可以没有参数；如果有参数的话，有且只能有NSNotification一个参数。
-
-
+<br></br>
 #### 2. 发送通知
 ```objective-c
 [[NSNotificationCenter defaultCenter] postNotificationName:@"Second" object:@"http://www.cnblogs.com/xiaofeixiang" userInfo:dict];
 ```
-
+<br></br>
 #### 3. 销毁观察者
+销毁observer的所有通知的监听
 ```objective-c
 -(void)dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 ```
 
-或者通过名字销毁
+通过名字销毁单个监听
 ```objective-c
 [[NSNotificationCenter defaultCenter] removeObserver:self name:@"First" object:nil];
 ```
