@@ -1,5 +1,5 @@
 
-#### UIImagePickerControllerSourceType枚举
+### UIImagePickerControllerSourceType枚举
 ```objective-c
 typedef NS_ENUM(NSInteger, UIImagePickerControllerSourceType) {
     UIImagePickerControllerSourceTypePhotoLibrary,   //图库、相册
@@ -8,7 +8,7 @@ typedef NS_ENUM(NSInteger, UIImagePickerControllerSourceType) {
 } __TVOS_PROHIBITED;
 ```
 
-#### 类方法 
+### 类方法 
 
 用于判断设备是否支持某一数据源：
 ```objective-c
@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, UIImagePickerControllerSourceType) {
 + (BOOL)isCameraDeviceAvailable:(UIImagePickerControllerCameraDevice)cameraDevice   NS_AVAILABLE_IOS(4_0); // returns YES if camera device is available 
 ```
 
-#### 示例
+### 示例
 开始拍照
 ```objective-c
 - (void)takePhoto {
