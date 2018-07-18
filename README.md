@@ -11,11 +11,12 @@
     - [Project 06 - Video Background](#project-06---video-background)
     - [Project 07 - Custom Segue](#project-07---custom-segue)
     - [Project 08 - Pull To Refresh](#project-08---pull-to-refresh)
-    - [Project 09 - Banner](#project-09---banner)
-    - [Project 10 - Window Effect](#project-10---window-effect)
-    - [Project 11 - QR Code](#project-11---qr-code)
-    - [Project 12 - UILocalizedIndexedCollation](#project-12---uilocalizedindexedcollation)
-    - [Project 13 - AnimatedTransitioning](#project-13---animatedtransitioning)
+    - [Project 09 - Banner 头条轮播效果](#project-09---banner)
+    - [Project 10 - Window Effect 橱窗效果](#project-10---window-effect)
+    - [Project 11 - QR Code 二维码生成](#project-11---qr-code)
+    - [Project 12 - UILocalizedIndexedCollation 分类排序](#project-12---uilocalizedindexedcollation)
+    - [Project 13 - AnimatedTransitioning 转场动画](#project-13---animatedtransitioning)
+    - [Project 14 - UIVisualEffectView 磨砂效果](#project-14---uivisualeffectview)
 - [iOS Learning Notes](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES.md)
 </br> </br>
 
@@ -386,5 +387,21 @@ for (int index = 0; index < sectionTitlesCount; index++) {
         //返回nil 会显示默认动画
         return nil;
     }
+}
+```
+
+### Project 14 - UIVisualEffectView
+此项目实现了磨砂效果。了解了如何UIVisualEffectView来实现磨砂效果及生动效果。相关内容笔记如下：[UIVisualEffectView - 磨砂效果笔记](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/UIVisualEffectView%20-%20%E7%A3%A8%E7%A0%82%E6%95%88%E6%9E%9C.md)
+
+![project14](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2014%20-%20UIVisualEffectView/Project%2014.gif)
+
+#### 核心代码
+```objective-c
+- (void)addEffectView {
+    // 磨砂效果
+    self.effectView1 = [[UIVisualEffectView alloc] initWithEffect: [UIBlurEffect effectWithStyle: UIBlurEffectStyleExtraLight]];
+    self.effectView1.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 100);
+    [self.view bringSubviewToFront:self.effectView1];
+    [self.view addSubview:self.effectView1];
 }
 ```
