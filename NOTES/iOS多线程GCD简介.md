@@ -65,7 +65,8 @@ dispatch_sync(queue, ^{
 ```
 
 #### dispatch_after
-在我们开发过程中经常会用到在多少秒后执行某个方法，通常我们会用这个`- (void)performSelector:(SEL)aSelector withObject:(id)anArgument afterDelay:(NSTimeInterval)delay`函数。不过现在我们可以使用一个新的方法。
+在我们开发过程中经常会用到在多少秒后执行某个方法，通常我们会用这个`objective-c 
+- (void)performSelector:(SEL)aSelector withObject:(id)anArgument afterDelay:(NSTimeInterval)delay`函数。不过现在我们可以使用一个新的方法。
 
 放到全局默认的线程里面，这样就不必等待当前调用线程执行完后再执行你的方法 
 ```objective-c
