@@ -42,9 +42,7 @@ iOS消息通知机制算是同步的，观察者只要向消息中心注册， �
 #### 3. 销毁观察者
 销毁observer的所有通知的监听
 ```objective-c
--(void)dealloc{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
+[[NSNotificationCenter defaultCenter] removeObserver:self];
 ```
 
 通过名字销毁单个监听
