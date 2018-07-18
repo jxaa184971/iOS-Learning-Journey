@@ -4,8 +4,6 @@ Masonry 源码：https://github.com/Masonry/Masonry
 
 Masonry是一个轻量级的布局框架 拥有自己的描述语法 采用更优雅的链式语法封装自动布局 简洁明了 并具有高可读性 而且同时支持 iOS 和 Max OS X。
 
-<br></br>
-
 ### 导入库
 ```objective-c
 pod 'Masonry'
@@ -15,8 +13,6 @@ pod 'Masonry'
 ```objective-c
 #import "Masonry.h"
 ```
-
-<br></br>
 
 ### MAS的属性和NSLayout属性的对比
 |MASViewAttribute|NSLayoutAttribute|
@@ -32,8 +28,6 @@ pod 'Masonry'
 |view.mas_centerX|NSLayoutAttributeCenterX|
 |view.mas_centerY|NSLayoutAttributeCenterY|
 |view.mas_baseline|NSLayoutAttributeBaseline|
-
-<br></br>
 
 ### edges属性
 ```objective-c
@@ -61,19 +55,15 @@ make.center.equalTo(button1)
 make.center.equalTo(superview).centerOffset(CGPointMake(-5, 10))
 ```
 
-<br></br>
-
 ### 调用方法
 
-mas_makeConstraints 建立约束，如果已经有约束则不再调用
+* mas_makeConstraints 建立约束，如果已经有约束则不再调用
 
-mas_remakeConstraints 重新建立约束，删除原有约束新建新的约束
+* mas_remakeConstraints 重新建立约束，删除原有约束新建新的约束
 
-mas_equalTo 是一个MACRO，除了NSNumber支持的那些数值类型之外 就只支持CGPoint CGSize UIEdgeInsets。多用来跟某一个数值进行比较
+* mas_equalTo 是一个MACRO，除了NSNumber支持的那些数值类型之外 就只支持CGPoint CGSize UIEdgeInsets。多用来跟某一个数值进行比较
 
-equalTo 用来跟某一个View进行比较
-
-<br></br>
+* equalTo 用来跟某一个View进行比较
 
 ### 例子
 ```objective-c
