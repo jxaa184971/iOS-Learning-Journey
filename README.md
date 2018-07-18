@@ -403,7 +403,7 @@ for (int index = 0; index < sectionTitlesCount; index++) {
     // 磨砂效果
     self.effectView1 = [[UIVisualEffectView alloc] initWithEffect: [UIBlurEffect effectWithStyle: UIBlurEffectStyleExtraLight]];
     self.effectView1.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 100);
-    [self.view bringSubviewToFront:self.effectView1];
     [self.view addSubview:self.effectView1];
+    [self.view bringSubviewToFront:self.effectView1];
 }
 ```
