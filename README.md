@@ -18,7 +18,7 @@
     - [Project 13 - AnimatedTransitioning 转场动画](#project-13---animatedtransitioning)
     - [Project 14 - UIVisualEffectView 磨砂效果](#project-14---uivisualeffectview)
 - [iOS Learning Notes](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES.md)
-</br> </br>
+<br></br>
 
 ### Project 01 - UIImage Resize
 在使用图片的时候, 有时候图片的原本像素太大, 导致显示的时候图片显示异常. 例如使用地图自定义大头针的时候, 如果图片像素过大, 大头针会铺满整个屏幕, 直接缩小修改图片的大小又会导致大头针图像变得模糊. 这时候就需要更改UIImage到所需要的像素.
@@ -53,7 +53,7 @@ func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
 }
 ```
 
-</br></br>
+<br></br>
 
 ### Project 02 - HTTP Request and JSON
 发送HTTP同步请求及JSON格式的数据处理
@@ -134,7 +134,7 @@ func sendRequest() -> Array<String>?
         }
     }
 ```
-</br></br>
+<br></br>
 
 ### Project 03 - Splash Launching
 模仿Twitter的Lauching动画
@@ -175,6 +175,8 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 }
 ```
 
+<br></br>
+
 ### Project 04 - Simple Animation
 本项目介绍了利用`UIView.animateWithDuration()`方法来实现一些简单的动画, 包括位置的改变, 透明度的改变, 大小的改变, 颜色的改变已经旋转. 效果图如下:
 
@@ -189,17 +191,21 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 ##### 旋转
 ![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Rotation.gif)
 
+<br></br>
 
 ### Project 05 - Log In Animation
 此项目为实现一些登录界面的动画效果, 让用户交互体验提高。
 
 ![project05](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2005%20-%20Log%20In%20Animation/Project%2005.gif)
 
+<br></br>
 
 ### Project 06 - Video Background
 此项目模仿Spotify公司实现了登录界面的视频背景.
 
 ![project06](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2006%20-%20VideoBackground/Project%2006.gif)
+
+<br></br>
 
 ### Project 07 - Custom Segue
 此项目实现了自定义Segue及Unwind Segue. 
@@ -207,10 +213,14 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 
 ![project07](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2007%20-%20Custom%20Segue/Project%2007.gif)
 
+<br></br>
+
 ### Project 08 - Pull To Refresh
 此项目实现了TableView的下拉刷新效果
 
 ![project08](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2008%20-%20Pull%20To%20Refresh/Project%2008.gif)
+
+<br></br>
 
 ### Project 09 - Banner
 此项目实现了轮播头条的效果.
@@ -221,6 +231,8 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 如果指定轮播的图片(或View)为5张, 那么在UICollectionView的前面增加最后一张的图片(或View), 最后增加第一张图片(或View). 最终UICollectionView的排列为: 5 1 2 3 4 5 1. 每次滑到首位(第一个5)时, 通过代码移动到相同样式的倒数第二的位置(倒数第二个5); 滑到末位(最后一个1)时, 通过代码移动到相应样式的第二个位置(第一个1). 用这样的方法来达到无限循环的效果.
 
 ![project09](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2009%20-%20Banner/Project%2009.gif)
+
+<br></br>
 
 ### Project 10 - Window Effect
 此项目实现了UITableView中的橱窗显示图片的效果. 
@@ -253,6 +265,8 @@ func resetImagePosition(){
     self.picView.transform = transform;
 }
 ```
+
+<br></br>
 
 ### Project 11 - QR Code
 此项目实现了将URL字符串转换成二维码的功能。项目中还附带了修改二维码颜色的代码，以及将UIView截屏成UIImage的代码。
@@ -292,6 +306,8 @@ UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
 UIGraphicsEndImageContext();
 ```
 
+<br></br>
+
 ### Project 12 - UILocalizedIndexedCollation
 此项目实现了利用UILocalizedIndexedCollation来对姓名进行排列，以达到原生通讯录的效果。
 
@@ -319,6 +335,8 @@ for (int index = 0; index < sectionTitlesCount; index++) {
     newSectionsArray[index] = sortedPersonArrayForSection;
 }
 ```
+
+<br></br>
 
 ### Project 13 - AnimatedTransitioning
 此项目实现了UINavigationController下页面跳转的自定义转场动画效果。
@@ -389,6 +407,8 @@ for (int index = 0; index < sectionTitlesCount; index++) {
     }
 }
 ```
+
+<br></br>
 
 ### Project 14 - UIVisualEffectView
 此项目实现了磨砂效果。了解了如何UIVisualEffectView来实现磨砂效果及生动效果。
