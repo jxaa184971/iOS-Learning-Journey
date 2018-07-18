@@ -16,6 +16,7 @@
     - [Project 11 - QR Code](#project-11---qr-code)
     - [Project 12 - UILocalizedIndexedCollation](#project-12---uilocalizedindexedcollation)
     - [Project 13 - AnimatedTransitioning](#project-13---animatedtransitioning)
+- [iOS Learning Notes](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES.md)
 </br> </br>
 
 ### Project 01 - UIImage Resize
