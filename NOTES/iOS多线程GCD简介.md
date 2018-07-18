@@ -40,9 +40,9 @@ dispatch_queue_t backgroundQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIO
 
 #### 自定义创建一个queue
 ```objective-c
-//串行队列 
+// 串行队列 
 dispatch_queue_t serialQueue = dispatch_queue_create(“serialQueue", DISPATCH_QUEUE_SERIAL); 
-//并发队列 
+// 并发队列 
 dispatch_queue_t concurrentQueue = dispatch_queue_create("concurrentQueue", DISPATCH_QUEUE_CONCURRENT);
 ```
 
