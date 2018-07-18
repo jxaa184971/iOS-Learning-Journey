@@ -22,7 +22,7 @@ iOS消息通知机制算是同步的，观察者只要向消息中心注册， �
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationSecond:) name:@"Second" object:nil]; 
 ```    
 第一个参数是观察者，第二个参数表示消息回调的方法，第三个消息通知的名字，第四个参数nil表示接受所有发送者的消息
-
+<br></br>
 回调方法
 ```objective-c
 -(void)notificationSecond:(NSNotification *)notification{ 
