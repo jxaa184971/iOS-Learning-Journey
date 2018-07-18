@@ -17,12 +17,13 @@ iOS消息通知机制算是同步的，观察者只要向消息中心注册， �
 ### 使用
 
 #### 1. 通过NSNotificationCenter注册通知NSNotification
+第一个参数是观察者，第二个参数表示消息回调的方法，第三个消息通知的名字，第四个参数nil表示接受所有发送者的消息
 ```objective-c
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationSecond:) name:@"Second" object:nil]; 
 ```    
-第一个参数是观察者，第二个参数表示消息回调的方法，第三个消息通知的名字，第四个参数nil表示接受所有发送者的消息
 
-##### 回调方法
+#### 回调方法
+回调方法可以没有参数；如果有参数的话，有且只能有NSNotification一个参数。
 ```objective-c
 -(void)notificationSecond:(NSNotification *)notification{ 
     NSString *name=[notification name]; 
@@ -32,7 +33,6 @@ iOS消息通知机制算是同步的，观察者只要向消息中心注册， �
     NSLog(@"获取的值:%@",[dict objectForKey:@"key"]); 
 }
 ```
-回调方法可以没有参数；如果有参数的话，有且只能有NSNotification一个参数。
 
 #### 2. 发送通知
 ```objective-c
