@@ -2,7 +2,7 @@
 - Personal iOS Learning Journey
 
 ## 目录(Table of Contents)
-- [iOS Learning Project](#ios-learning-journey)
+- [iOS Learning Demos](#ios-learning-journey)
     - [Project 01 - UIImage Resize](#project-01---uiimage-resize)
     - [Project 02 - HTTP Request & JSON](#project-02---http-request-and-json)
     - [Project 03 - Splash Launching](#project-03---splash-launching)    
