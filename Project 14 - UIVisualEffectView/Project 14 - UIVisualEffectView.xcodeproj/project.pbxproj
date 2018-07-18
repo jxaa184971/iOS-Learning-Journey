@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DD8565520FF18DA0016F990 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD8565420FF18DA0016F990 /* AppDelegate.m */; };
+		7DD8565820FF18DA0016F990 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD8565720FF18DA0016F990 /* ViewController.m */; };
+		7DD8565B20FF18DA0016F990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD8565920FF18DA0016F990 /* Main.storyboard */; };
+		7DD8565D20FF18DB0016F990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD8565C20FF18DB0016F990 /* Assets.xcassets */; };
+		7DD8566320FF18DB0016F990 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD8566220FF18DB0016F990 /* main.m */; };
+		7DD8566D20FF18DC0016F990 /* Project_14___UIVisualEffectViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD8566C20FF18DC0016F990 /* Project_14___UIVisualEffectViewTests.m */; };
+		7DD8567820FF18DC0016F990 /* Project_14___UIVisualEffectViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD8567720FF18DC0016F990 /* Project_14___UIVisualEffectViewUITests.m */; };
+		7DD8568A20FF1C110016F990 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD8568920FF1C110016F990 /* TableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DD8566920FF18DC0016F990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DD8564820FF18DA0016F990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DD8564F20FF18DA0016F990;
+			remoteInfo = "Project 14 - UIVisualEffectView";
+		};
+		7DD8567420FF18DC0016F990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DD8564820FF18DA0016F990 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DD8564F20FF18DA0016F990;
+			remoteInfo = "Project 14 - UIVisualEffectView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7DD8565020FF18DA0016F990 /* Project 14 - UIVisualEffectView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 14 - UIVisualEffectView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD8565320FF18DA0016F990 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7DD8565420FF18DA0016F990 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7DD8565620FF18DA0016F990 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7DD8565720FF18DA0016F990 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7DD8565A20FF18DA0016F990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DD8565C20FF18DB0016F990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DD8566120FF18DB0016F990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DD8566220FF18DB0016F990 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7DD8566820FF18DC0016F990 /* Project 14 - UIVisualEffectViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 14 - UIVisualEffectViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD8566C20FF18DC0016F990 /* Project_14___UIVisualEffectViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Project_14___UIVisualEffectViewTests.m"; sourceTree = "<group>"; };
+		7DD8566E20FF18DC0016F990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DD8567320FF18DC0016F990 /* Project 14 - UIVisualEffectViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 14 - UIVisualEffectViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD8567720FF18DC0016F990 /* Project_14___UIVisualEffectViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Project_14___UIVisualEffectViewUITests.m"; sourceTree = "<group>"; };
+		7DD8567920FF18DC0016F990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DD8568820FF1C110016F990 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		7DD8568920FF1C110016F990 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DD8564D20FF18DA0016F990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD8566520FF18DC0016F990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD8567020FF18DC0016F990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DD8564720FF18DA0016F990 = {
+			isa = PBXGroup;
+			children = (
+				7DD8565220FF18DA0016F990 /* Project 14 - UIVisualEffectView */,
+				7DD8566B20FF18DC0016F990 /* Project 14 - UIVisualEffectViewTests */,
+				7DD8567620FF18DC0016F990 /* Project 14 - UIVisualEffectViewUITests */,
+				7DD8565120FF18DA0016F990 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DD8565120FF18DA0016F990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DD8565020FF18DA0016F990 /* Project 14 - UIVisualEffectView.app */,
+				7DD8566820FF18DC0016F990 /* Project 14 - UIVisualEffectViewTests.xctest */,
+				7DD8567320FF18DC0016F990 /* Project 14 - UIVisualEffectViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DD8565220FF18DA0016F990 /* Project 14 - UIVisualEffectView */ = {
+			isa = PBXGroup;
+			children = (
+				7DD8565320FF18DA0016F990 /* AppDelegate.h */,
+				7DD8565420FF18DA0016F990 /* AppDelegate.m */,
+				7DD8565620FF18DA0016F990 /* ViewController.h */,
+				7DD8565720FF18DA0016F990 /* ViewController.m */,
+				7DD8565920FF18DA0016F990 /* Main.storyboard */,
+				7DD8565C20FF18DB0016F990 /* Assets.xcassets */,
+				7DD8566120FF18DB0016F990 /* Info.plist */,
+				7DD8566220FF18DB0016F990 /* main.m */,
+				7DD8568820FF1C110016F990 /* TableViewCell.h */,
+				7DD8568920FF1C110016F990 /* TableViewCell.m */,
+			);
+			path = "Project 14 - UIVisualEffectView";
+			sourceTree = "<group>";
+		};
+		7DD8566B20FF18DC0016F990 /* Project 14 - UIVisualEffectViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DD8566C20FF18DC0016F990 /* Project_14___UIVisualEffectViewTests.m */,
+				7DD8566E20FF18DC0016F990 /* Info.plist */,
+			);
+			path = "Project 14 - UIVisualEffectViewTests";
+			sourceTree = "<group>";
+		};
+		7DD8567620FF18DC0016F990 /* Project 14 - UIVisualEffectViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7DD8567720FF18DC0016F990 /* Project_14___UIVisualEffectViewUITests.m */,
+				7DD8567920FF18DC0016F990 /* Info.plist */,
+			);
+			path = "Project 14 - UIVisualEffectViewUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DD8564F20FF18DA0016F990 /* Project 14 - UIVisualEffectView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DD8567C20FF18DC0016F990 /* Build configuration list for PBXNativeTarget "Project 14 - UIVisualEffectView" */;
+			buildPhases = (
+				7DD8564C20FF18DA0016F990 /* Sources */,
+				7DD8564D20FF18DA0016F990 /* Frameworks */,
+				7DD8564E20FF18DA0016F990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 14 - UIVisualEffectView";
+			productName = "Project 14 - UIVisualEffectView";
+			productReference = 7DD8565020FF18DA0016F990 /* Project 14 - UIVisualEffectView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DD8566720FF18DC0016F990 /* Project 14 - UIVisualEffectViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DD8567F20FF18DC0016F990 /* Build configuration list for PBXNativeTarget "Project 14 - UIVisualEffectViewTests" */;
+			buildPhases = (
+				7DD8566420FF18DC0016F990 /* Sources */,
+				7DD8566520FF18DC0016F990 /* Frameworks */,
+				7DD8566620FF18DC0016F990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DD8566A20FF18DC0016F990 /* PBXTargetDependency */,
+			);
+			name = "Project 14 - UIVisualEffectViewTests";
+			productName = "Project 14 - UIVisualEffectViewTests";
+			productReference = 7DD8566820FF18DC0016F990 /* Project 14 - UIVisualEffectViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7DD8567220FF18DC0016F990 /* Project 14 - UIVisualEffectViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DD8568220FF18DC0016F990 /* Build configuration list for PBXNativeTarget "Project 14 - UIVisualEffectViewUITests" */;
+			buildPhases = (
+				7DD8566F20FF18DC0016F990 /* Sources */,
+				7DD8567020FF18DC0016F990 /* Frameworks */,
+				7DD8567120FF18DC0016F990 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DD8567520FF18DC0016F990 /* PBXTargetDependency */,
+			);
+			name = "Project 14 - UIVisualEffectViewUITests";
+			productName = "Project 14 - UIVisualEffectViewUITests";
+			productReference = 7DD8567320FF18DC0016F990 /* Project 14 - UIVisualEffectViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DD8564820FF18DA0016F990 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Jamie;
+				TargetAttributes = {
+					7DD8564F20FF18DA0016F990 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					7DD8566720FF18DC0016F990 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 7DD8564F20FF18DA0016F990;
+					};
+					7DD8567220FF18DC0016F990 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 7DD8564F20FF18DA0016F990;
+					};
+				};
+			};
+			buildConfigurationList = 7DD8564B20FF18DA0016F990 /* Build configuration list for PBXProject "Project 14 - UIVisualEffectView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DD8564720FF18DA0016F990;
+			productRefGroup = 7DD8565120FF18DA0016F990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DD8564F20FF18DA0016F990 /* Project 14 - UIVisualEffectView */,
+				7DD8566720FF18DC0016F990 /* Project 14 - UIVisualEffectViewTests */,
+				7DD8567220FF18DC0016F990 /* Project 14 - UIVisualEffectViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DD8564E20FF18DA0016F990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD8565D20FF18DB0016F990 /* Assets.xcassets in Resources */,
+				7DD8565B20FF18DA0016F990 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD8566620FF18DC0016F990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD8567120FF18DC0016F990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DD8564C20FF18DA0016F990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD8565820FF18DA0016F990 /* ViewController.m in Sources */,
+				7DD8566320FF18DB0016F990 /* main.m in Sources */,
+				7DD8565520FF18DA0016F990 /* AppDelegate.m in Sources */,
+				7DD8568A20FF1C110016F990 /* TableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD8566420FF18DC0016F990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD8566D20FF18DC0016F990 /* Project_14___UIVisualEffectViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DD8566F20FF18DC0016F990 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD8567820FF18DC0016F990 /* Project_14___UIVisualEffectViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DD8566A20FF18DC0016F990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DD8564F20FF18DA0016F990 /* Project 14 - UIVisualEffectView */;
+			targetProxy = 7DD8566920FF18DC0016F990 /* PBXContainerItemProxy */;
+		};
+		7DD8567520FF18DC0016F990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DD8564F20FF18DA0016F990 /* Project 14 - UIVisualEffectView */;
+			targetProxy = 7DD8567420FF18DC0016F990 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DD8565920FF18DA0016F990 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DD8565A20FF18DA0016F990 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DD8567A20FF18DC0016F990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7DD8567B20FF18DC0016F990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DD8567D20FF18DC0016F990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 14 - UIVisualEffectView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-14---UIVisualEffectView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DD8567E20FF18DC0016F990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 14 - UIVisualEffectView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-14---UIVisualEffectView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7DD8568020FF18DC0016F990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 14 - UIVisualEffectViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-14---UIVisualEffectViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 14 - UIVisualEffectView.app/Project 14 - UIVisualEffectView";
+			};
+			name = Debug;
+		};
+		7DD8568120FF18DC0016F990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 14 - UIVisualEffectViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-14---UIVisualEffectViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 14 - UIVisualEffectView.app/Project 14 - UIVisualEffectView";
+			};
+			name = Release;
+		};
+		7DD8568320FF18DC0016F990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 14 - UIVisualEffectViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-14---UIVisualEffectViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Project 14 - UIVisualEffectView";
+			};
+			name = Debug;
+		};
+		7DD8568420FF18DC0016F990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Project 14 - UIVisualEffectViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamie.Project-14---UIVisualEffectViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Project 14 - UIVisualEffectView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DD8564B20FF18DA0016F990 /* Build configuration list for PBXProject "Project 14 - UIVisualEffectView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DD8567A20FF18DC0016F990 /* Debug */,
+				7DD8567B20FF18DC0016F990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DD8567C20FF18DC0016F990 /* Build configuration list for PBXNativeTarget "Project 14 - UIVisualEffectView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DD8567D20FF18DC0016F990 /* Debug */,
+				7DD8567E20FF18DC0016F990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DD8567F20FF18DC0016F990 /* Build configuration list for PBXNativeTarget "Project 14 - UIVisualEffectViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DD8568020FF18DC0016F990 /* Debug */,
+				7DD8568120FF18DC0016F990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DD8568220FF18DC0016F990 /* Build configuration list for PBXNativeTarget "Project 14 - UIVisualEffectViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DD8568320FF18DC0016F990 /* Debug */,
+				7DD8568420FF18DC0016F990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DD8564820FF18DA0016F990 /* Project object */;
+}
