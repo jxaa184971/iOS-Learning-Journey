@@ -1,4 +1,4 @@
-# UIImagePickerController 相机、照片选择器
+# UIImagePickerController 照片选择器
 
 ### UIImagePickerControllerSourceType枚举
 ```objective-c
