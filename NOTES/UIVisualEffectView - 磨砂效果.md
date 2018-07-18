@@ -49,6 +49,7 @@ UIVisualEffect是一个集成自NSObject的基类。两个子类：
     [self.view addSubview:self.effectView2];
 }
 ```
+
 ### 效果图
 ![project14](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2014%20-%20UIVisualEffectView/Project%2014.gif)
 
