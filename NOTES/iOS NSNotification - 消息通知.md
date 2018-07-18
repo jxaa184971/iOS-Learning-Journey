@@ -27,11 +27,11 @@ iOS消息通知机制算是同步的，观察者只要向消息中心注册， �
 回调方法
 ```objective-c
 -(void)notificationSecond:(NSNotification *)notification{ 
-        NSString *name=[notification name]; 
-        NSString *object=[notification object]; 
-        NSDictionary *dict=[notification userInfo]; 
-        NSLog(@"名称:%@----对象:%@",name,object); 
-        NSLog(@"获取的值:%@",[dict objectForKey:@"key"]); 
+    NSString *name=[notification name]; 
+    NSString *object=[notification object]; 
+    NSDictionary *dict=[notification userInfo]; 
+    NSLog(@"名称:%@----对象:%@",name,object); 
+    NSLog(@"获取的值:%@",[dict objectForKey:@"key"]); 
 }
 ```
 回调方法可以没有参数；如果有参数的话，有且只能有NSNotification一个参数。
