@@ -1,7 +1,7 @@
 # 获取GPS所在的城市或省份 - CoreLocation
 
 ## info.plist文件
-在info.plist中添加`NSLocationWhenInUseUsageDescription`和`NSLocationAlwaysAndWhenInUsageDescription`  
+在info.plist中添加`NSLocationWhenInUseUsageDescription`和`NSLocationAlwaysUsageDescription`  
 
 ![](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/PIC/96B4CEB0-9B0D-4981-BDC7-8F24C3E4DE3F.png)
 
