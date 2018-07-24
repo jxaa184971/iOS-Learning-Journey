@@ -1,10 +1,11 @@
 # 获取GPS所在的城市或省份 - CoreLocation
 
-## 在info.plist文件中添加：
+## info.plist文件
+在info.plist中添加`NSLocationWhenInUseUsageDescription`和`NSLocationAlwaysAndWhenInUsageDescription`  
+
 ![](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/PIC/96B4CEB0-9B0D-4981-BDC7-8F24C3E4DE3F.png)
 
-#### PS:NSLocationAlwaysUsageDescription可以不添加
-
+#### PS:NSLocationAlwaysUsageDescription提示部分字符串可以不添加  
 
 ## 导入头文件：
 ```objective-c
@@ -43,7 +44,7 @@ iOS8以后需要先通过`requestWhenInUseAuthorization`向用户获取权限后
 }
 ```
 
-## 实现CLLocationManagerDelegate方法：
+## 实现CLLocationManagerDelegate方法
 定位成功
 ```objective-c
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
