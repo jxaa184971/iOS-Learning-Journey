@@ -2,6 +2,7 @@
 - Personal iOS Learning Journey
 
 ## 目录(Table of Contents)
+- [iOS Learning Notes](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES.md)
 - [iOS Learning Demos](#ios-learning-journey)
     - [Project 01 - UIImage Resize](#project-01---uiimage-resize)
     - [Project 02 - HTTP Request & JSON](#project-02---http-request-and-json)
@@ -17,7 +18,7 @@
     - [Project 12 - UILocalizedIndexedCollation 分类排序](#project-12---uilocalizedindexedcollation)
     - [Project 13 - AnimatedTransitioning 转场动画](#project-13---animatedtransitioning)
     - [Project 14 - UIVisualEffectView 磨砂效果](#project-14---uivisualeffectview)
-- [iOS Learning Notes](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES.md)
+
 <br></br>
 
 ### Project 01 - UIImage Resize
