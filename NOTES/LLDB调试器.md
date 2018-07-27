@@ -32,3 +32,13 @@
 
 ![](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/PIC/3297309-d86aeb5d9b683852.png)
 
+### image
+该命令用于寻址，假如程序由于某个原因崩溃掉了然而崩溃并没有给你定位到具体的信息而是直接怵在了main函数里边，此时image指令将极大的帮助你。
+
+我在代码中制造了数组越界的崩溃。在崩溃log中看到如红箭头指向的地址，这里应该是我们代码中崩溃的地方。
+
+![](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/PIC/1532586150084.jpg)
+
+这时候我们可以调用`image lookup --address 0x000000010b30c668`即可定位到代码崩溃的class甚至崩溃的行数。如下图所示：
+
+![](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/PIC/1532586188518.jpg)
