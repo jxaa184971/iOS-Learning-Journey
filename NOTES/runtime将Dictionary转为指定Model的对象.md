@@ -11,7 +11,7 @@
 #### PS: 使用完之后一定要将propertyList释放，否则会导致内存泄露！！！
 
 ### 代码样例
-```objetive-c
+```objective-c
 id setDicToDataModel(NSDictionary *dic, Class dataClass){
     int i;
     unsigned int propertyCount = 0; //记录属性的个数
