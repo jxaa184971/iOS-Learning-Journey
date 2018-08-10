@@ -4,7 +4,8 @@
 ### 实现原理
 * 执行完`class_copyPropertyList`方法后，返回model类中**第一个属性指向的内存地址**, 传入propertyCount的指针`&propertyCount`，获取到model类中所有**属性的个数**，注意这里返回的只是所有带`@property`前缀的属性。
 * 因为model类中属性指向的内存地址是连续的，通过第一个属性地址+index的方法，获取所有属性的`objc_property_t`
-* 再通过调用`property_getName`方法，获取属性的名字。再将获得的属性的名字作为key从字典中获取对应的值，最后通过`[modelObj setValue: forKey:]`为对应的model对象设置属性
+* 再通过调用`property_getName`方法，获取属性的名字，注意：这里因为方法对传入参数对象类型的要求，需要**加上前缀**'*'后再使用，例如：`property_getName(*thisProperty)` 
+* 再将获得的属性的名字作为key从字典中获取对应的值，最后通过`[modelObj setValue: forKey:]`为对应的model对象设置属性
 * 使用完后将`propertyList`释放
 
 #### PS: 使用完之后一定要将propertyList释放，否则会导致内存泄露！！！
@@ -20,7 +21,7 @@ id setDicToDataModel(NSDictionary *dic, Class dataClass){
         //通过指向第一个属性的内存地址+index的方式获取所有的属性objc_property_t对象
         objc_property_t *thisProperty = propertyList + i;
         //获取属性名字
-        const char* propertyName = property_getName(thisProperty);
+        const char* propertyName = property_getName(*thisProperty);
         NSString *string = [NSString stringWithFormat:@"%s",propertyName];
         [propertyNameList addObject:string];
     }
