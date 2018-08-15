@@ -39,8 +39,8 @@ app需要实现获取webview中的H5点击事件，H5端按钮中绑定`"onclick
 上面的写法会导致互相强引用导致webview无法释放！应该将self(UIWebView)换成另外一个专门处理JS的类。
 
 ## 正确的做法
-### 创建一个专门处理WebView中JS点击事件的类TPJSContextModel
-在.h文件导入`JavaScriptCore`库，并且构建一个协议继承于`JSExport`, 协议名没有特殊要求。并在协议中实现与H5中按钮点击事件***方法名相同***的方法`jsClicked`。最后在.m文件中实现该方法的业务逻辑处理。
+### 创建一个专门处理WebView中JS点击事件的类
+在.h文件导入`JavaScriptCore`库，并且构建一个协议继承于`JSExport`, 协议名没有特殊要求。并在协议中实现与H5中按钮点击事件***方法名相同***的方法`jsClicked`。
 ```objective-c
 #import <Foundation/Foundation.h>
 #import <JavaScriptCore/JavaScriptCore.h>
@@ -52,6 +52,14 @@ app需要实现获取webview中的H5点击事件，H5端按钮中绑定`"onclick
 @interface TPJSContextModel : NSObject <H5toAppDelegate>
 
 @end
+```
+### 在.m文件中实现该方法的业务逻辑处理 
+```objective-c
+- (void)jsClicked:(NSString *)param
+{
+    //处理对应的业务逻辑
+    //...
+}
 ```
 
 ### 在UIWebView代理方法中将预设好的TPJSContextModel对象设置为H5中响应事件对应的JS对象
