@@ -68,7 +68,6 @@ app需要实现获取webview中的H5点击事件，H5端按钮中绑定`"onclick
 ```objective-c
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    [self.activityView stopAnimating];
     self.jsContext = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
     TPJSContextModel *jsModel = [[TPJSContextModel alloc]init];
     self.jsContext[@"window"] = jsModel;
