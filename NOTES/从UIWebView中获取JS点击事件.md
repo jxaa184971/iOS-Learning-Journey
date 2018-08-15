@@ -58,7 +58,9 @@ app需要实现获取webview中的H5点击事件，H5端按钮中绑定`"onclick
 - (void)jsClicked:(NSString *)param
 {
     //处理对应的业务逻辑
-    //...
+    if ([param isEqualToString:@"home"]]) {
+        //jump to home page
+    }
 }
 ```
 
