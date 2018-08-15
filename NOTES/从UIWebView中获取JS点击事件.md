@@ -5,7 +5,7 @@
 JavaScriptCore是webkit的一个重要组成部分，主要是对JS进行解析和提供执行环境。iOS7后苹果在iPhone平台推出，极大的方便了我们对js的操作。我们可以脱离webview直接运行我们的js。
 
 ### JSContext
-JS执行的环境，同时也通过JSVirtualMachine管理着所有对象的生命周期，每个JSValue都和JSContext相关联并且***强引用***context。
+JS执行的环境，同时也通过JSVirtualMachine管理着所有对象的生命周期，每个JSValue都和JSContext相关联并且**强引用**context。
 
 ### JSExport
 一个协议，如果JS对象想直接调用OC对象里面的方法和属性，那么这个OC对象只要实现这个JSExport协议就可以了。
@@ -45,11 +45,11 @@ app需要实现获取webview中的H5点击事件，H5端按钮中绑定`"onclick
 #import <Foundation/Foundation.h>
 #import <JavaScriptCore/JavaScriptCore.h>
 
-@protocol h5toAppDelegate<JSExport>
+@protocol H5toAppDelegate<JSExport>
 - (void)jsClicked:(NSString *)param;
 @end
 
-@interface TPJSContextModel : NSObject <h5toAppDelegate>
+@interface TPJSContextModel : NSObject <H5toAppDelegate>
 
 @end
 ```
