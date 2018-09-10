@@ -35,14 +35,14 @@ WKWebView有两个delegate, `WKUIDelegate` 和 `WKNavigationDelegate`。`WKNavig
     * WKBackForwardListItem：每个网页节点对象。
 
 ## WKNavigationDelegate
-##### 页面开始加载时调用 
+#### 页面开始加载时调用 
 ```objective-c
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation{
     //可以用来显示loading圈
 }
 ```
 
-##### 当内容开始返回时调用
+#### 当内容开始返回时调用
 
 ```objective-c
 - (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation{
@@ -50,28 +50,28 @@ WKWebView有两个delegate, `WKUIDelegate` 和 `WKNavigationDelegate`。`WKNavig
 }
 ```
 
-##### 页面加载完成之后调用
+#### 页面加载完成之后调用
 ```objective-c
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     //可以关闭loading圈，进行一些页面配置等
 }
 ```
 
-##### 页面加载失败时调用
+#### 页面加载失败时调用
 ```objective-c
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation{
     //可以关闭loading圈，进行一些错误提示的操作
 }
 ```
 
-##### 接收到服务器跳转请求之后调用
+#### 接收到服务器跳转请求之后调用
 ```objective-c
 - (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation{
 
 }
 ```
 
-##### 在收到响应后，决定是否跳转
+#### 在收到响应后，决定是否跳转
 ```objective-c
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler{
     NSLog(@"%@",navigationResponse.response.URL.absoluteString);
@@ -83,19 +83,22 @@ WKWebView有两个delegate, `WKUIDelegate` 和 `WKNavigationDelegate`。`WKNavig
 
 ```
 
-##### 在发送请求之前，决定是否跳转
+#### 在发送请求之前，决定是否跳转
 ```objective-c
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-    NSLog(@"%@",navigationAction.request.URL.absoluteString);
-    //允许跳转
-    decisionHandler(WKNavigationActionPolicyAllow);
-    //不允许跳转
-    //decisionHandler(WKNavigationActionPolicyCancel);
+    NSURL *URL = navigationAction.request.URL;
+    if (![URL.absoluteString hasPrefix:@"http"]) {
+        //不允许跳转
+        decisionHandler(WKNavigationActionPolicyCancel);
+    }else {
+        //允许跳转
+        decisionHandler(WKNavigationActionPolicyAllow);
+    }
 }
 ```
 
 ## WKUIDelegate
-##### 创建一个新的WebView
+#### 创建一个新的WebView
 当web页面需要在新窗口打开一个页面时（例如`target=_blank`）会调用此方法。通常的做法是拦截新打开的窗口页面的URL，不创建新的webview，而是调用`loadRequest`方法重新请求拦截到的URL。如下面代码所示：
 ```objective-c
 - (WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures{
@@ -104,7 +107,7 @@ WKWebView有两个delegate, `WKUIDelegate` 和 `WKNavigationDelegate`。`WKNavig
 }
 ```
 
-##### 警告框
+#### 警告框
 当web页面需要弹出警告框，会调用此方法。我可以在这个方法里面自定义需要弹出警告框的样式，completionHandler会以block的形式当做参数传回来，当用户点击确认时调用`completionHandler()`
 ```objective-c
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler{
@@ -116,7 +119,7 @@ WKWebView有两个delegate, `WKUIDelegate` 和 `WKNavigationDelegate`。`WKNavig
 }
 ```
 
-##### 确认框
+#### 确认框
 与警告框使用方法类似，唯一的区别是`completionHandler()`需要传入用户确认（YES）或者取消（NO）的参数。
 ```objective-c
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL result))completionHandler{
@@ -131,7 +134,7 @@ WKWebView有两个delegate, `WKUIDelegate` 和 `WKNavigationDelegate`。`WKNavig
 }
 ```
 
-##### 输入框
+#### 输入框
 与确认框使用方法类似，`completionHandler()`内需要传入用户输入的字符串。
 ```objective-c
 - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(nullable NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * __nullable result))completionHandler{
