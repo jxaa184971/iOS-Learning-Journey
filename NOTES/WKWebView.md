@@ -10,16 +10,17 @@ WKWebView有两个delegate, `WKUIDelegate` 和 `WKNavigationDelegate`。`WKNavig
 
 ```objective-c
 - (void)viewDidLoad {
-        [super viewDidLoad];
-        webView = [[WKWebView alloc]init];
-        [self.view addSubview:webView];
+    [super viewDidLoad];
+    webView = [[WKWebView alloc]init];
+    [self.view addSubview:webView];
 
-        webView.UIDelegate = self;
-        webView.navigationDelegate = self;
-        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
+    webView.UIDelegate = self;
+    webView.navigationDelegate = self;
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
 }
 ```
 ## 基本框架
+![](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/PIC/784477-20161114144508482-1002417240.png)
 
 * **WKWebViewConfiguration**：这个类专门用来配置WKWebView。例如：可以设置`allowsInlineMediaPlayback` 是否支持浏览器支持视频内联播放。
     * WKPreference：这个类用来进行相关webView偏好设置。
