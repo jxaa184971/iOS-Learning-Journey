@@ -1,5 +1,4 @@
 # WKWebView
-## 简介
 WKWebView是为了解决UIWebView加载速度慢、占用内存大的问题。使用UIWebView加载网页的时候，我们会发现内存会无限增长，还有内存泄漏的问题存在。
 
 WebKit中更新的WKWebView控件的新特性与使用方法，它很好的解决了UIWebView存在的内存、加载速度等诸多问题。
