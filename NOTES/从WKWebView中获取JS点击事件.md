@@ -46,7 +46,7 @@ TPJSContextModel *jsContentModel = [[TPJSContextModel alloc]init];
 ```
 
 ## 关闭WebView时注销监听
-### PS: 一定要在添加监听的类的dealloc方法中移除该监听
+### PS: 一定要移除监听否则会造成内存泄露！
 
 ```objective-c
 - (void)dealloc {
