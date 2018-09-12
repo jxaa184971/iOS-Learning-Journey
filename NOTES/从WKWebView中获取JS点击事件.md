@@ -44,3 +44,12 @@ WKUserContentController *contentController = self.webView.configuration.userCont
 TPJSContextModel *jsContentModel = [[TPJSContextModel alloc]init];
 [contentController addScriptMessageHandler:jsContentModel name:@"methodName"];
 ```
+
+## 关闭WebView时注销监听
+### PS: 一定要在添加监听的类的dealloc方法中移除该监听
+
+```objective-c
+- (void)dealloc {
+    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"methodName"];
+}
+```
