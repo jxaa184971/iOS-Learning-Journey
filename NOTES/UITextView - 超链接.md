@@ -24,7 +24,7 @@ NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc] in
 textView.attributedText = attributedStr;
 ```
 ### 设置代理回调方法
-```objetive-c
+```objective-c
 - (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange
 {
     //在这里是可以做一些判定用来判断是否跳转
