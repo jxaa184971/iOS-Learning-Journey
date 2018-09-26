@@ -1,7 +1,7 @@
 # UITextView - 超链接
 
 ## NSLinkAttributeName
-在`UILabel`和`UITextField`中是无法使用该属性的，也就是说无法实现点击链接启动浏览器打开一个URL地址。该属性只能在`UITextView`中使用，来实现点击部分文字打开URL的操作。
+想要实现文本的超链接，即点击链接跳转浏览器打开一个ULR地址，可以使用`NSLinkAttributeName`属性。该属性只能在`UITextView`中使用，来实现点击部分文字打开URL的操作。在`UILabel`和`UITextField`中是无法使用该属性的。
 
 `NSLinkAttributeName`的对象可以是`NSURL`类型或`NSString`类型，但是推荐使用 `NSURL`。
 
@@ -32,7 +32,7 @@ textView.attributedText = attributedStr;
 }
 ```
 ## 自定义超链接UI样式
-如果需要在`UITextView`中修改其显示的富文本属性，可以直接修改`UITextView`的`linkTextAttributes`属性。
+如果需要在`UITextView`中自定义超链接的UI样式，可以直接修改`UITextView`中的`linkTextAttributes`属性。
 
 ### 代码样例
 ```objective-c
