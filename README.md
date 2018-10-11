@@ -445,6 +445,42 @@ for (int index = 0; index < sectionTitlesCount; index++) {
 }
 ```
 ### Project 15 - Hollowed Out Text Effect
-效果图如下
+此项目实现了文字镂空的效果，大致效果图如下：
 
 ![project15](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2015%20-%20Hollowed%20Out%20Text%20Effect/IMG2367.jpeg)
+
+#### 思路一
+整体思路为使用一张透明字体背景不透明的图片作为需要镂空图层的mask。为了达到这个目的：
+* 首先，生成一张透明背景字体不透明的图片
+* 将透明和不透明的部分反转，涉及的代码较底层
+* 将该图片设为灰色遮盖图层的`mask`
+
+#### 思路二
+直接使用`CoreGraphics`绘制一个带有半透明背景的view。为了达到这个目的：
+* 自定义一个类继承与`UIView`方法
+* 自定义该类中的`drawRect:`方法
+* 在`drawRect:`的方法中直接利用`CoreGraphics`绘制一个字体镂空的view，核心代码如下：
+```objective-c
+- (void)drawSubtractedText:(NSString *)text inRect:(CGRect)rect inContext:(CGContextRef)context {
+    // 压栈操作，保存一份当前图形上下文，开始绘制时调用
+    CGContextSaveGState(context);
+
+    /*
+     * 设置混合模式
+     * kCGBlendModeDestinationOut 绘制的部分会直接镂空（自己猜测的）
+     */
+    CGContextSetBlendMode(context, kCGBlendModeDestinationOut);
+
+    //设置需要绘制的label
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, rect.size.width, rect.size.height)];
+    label.font = [UIFont boldSystemFontOfSize:60];
+    label.text = text;
+    label.textAlignment = NSTextAlignmentCenter;
+    label.backgroundColor = [UIColor clearColor];
+    [label.layer drawInContext:context];
+
+    //出栈操作，恢复一份当前图形上下文，绘制结束时调用
+    CGContextRestoreGState(context);
+}
+```
+
