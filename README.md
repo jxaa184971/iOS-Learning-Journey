@@ -35,7 +35,7 @@
     - [Project 12 - UILocalizedIndexedCollation 分类排序](#project-12---uilocalizedindexedcollation)
     - [Project 13 - AnimatedTransitioning 转场动画](#project-13---animatedtransitioning)
     - [Project 14 - UIVisualEffectView 磨砂效果](#project-14---uivisualeffectview)
-    - [Project 15 - Hollowed Out Text Effect 文字镂空效果](#project-14---uivisualeffectview)
+    - [Project 15 - Hollowed Out Text Effect 文字镂空效果](#project-15---hollowed-out-text-effect)
 
 ### Project 01 - UIImage Resize
 在使用图片的时候, 有时候图片的原本像素太大, 导致显示的时候图片显示异常. 例如使用地图自定义大头针的时候, 如果图片像素过大, 大头针会铺满整个屏幕, 直接缩小修改图片的大小又会导致大头针图像变得模糊. 这时候就需要更改UIImage到所需要的像素.
