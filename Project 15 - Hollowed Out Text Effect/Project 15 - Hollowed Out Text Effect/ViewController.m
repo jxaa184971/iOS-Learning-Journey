@@ -24,7 +24,7 @@
 
     UIView *lightGrayView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-200)];
     lightGrayView.backgroundColor = [UIColor lightGrayColor];
-    lightGrayView.alpha = 0.8;
+    lightGrayView.alpha = 0.9;
 
     /*
      * 思路一
