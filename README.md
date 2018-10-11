@@ -450,9 +450,10 @@ for (int index = 0; index < sectionTitlesCount; index++) {
 ![project15](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2015%20-%20Hollowed%20Out%20Text%20Effect/IMG2367.jpeg)
 
 #### 思路一
-整体思路为使用一张透明字体背景不透明的图片作为需要镂空图层的mask。为了达到这个目的：
+整体思路为使用一张透明字体背景不透明的图片作为遮盖图层的mask。为了达到这个目的：
 * 首先，生成一张透明背景字体不透明的图片
 * 将图片每个像素的透明度反转（例如透明->不透明），涉及的代码较底层
+* 创建一个灰色遮盖图层，用来遮挡后面的图片
 * 将该图片设为灰色遮盖图层的`mask`
 
 #### 思路二
