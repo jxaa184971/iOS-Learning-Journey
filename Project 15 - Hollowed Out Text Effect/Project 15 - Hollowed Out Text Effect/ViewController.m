@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIImage+SubstractedText.h"
+#import "HollowedOutTextView.h"
 
 @interface ViewController ()
 
@@ -54,36 +55,60 @@
 //    temptext.textAlignment = NSTextAlignmentCenter;
 //    temptext.font = [UIFont systemFontOfSize:30];
 //    UIImage *image1 = [self imageFromView:temptext];
+//
+//    //生成mask及设置其轮廓
+//    CALayer *maskLayer = [CALayer layer];
+//    maskLayer.contents = (__bridge id _Nullable)(image1.CGImage);
+//    maskLayer.anchorPoint = CGPointZero;
+//    maskLayer.bounds = CGRectMake(0, 100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-200);
+//    //给灰色的view设置mask
+//    [lightGrayView.layer setMask:maskLayer];
+//
+//    [self.view addSubview:imageView];
+//    [self.view addSubview:lightGrayView];
 
     /*
      * 思路二
      * 先绘制一个透明背景不透明字的图片，再将图片的alpha值进行反向转换，生成不透明背景透明字的图片。再将此图片设为mask的轮廓。
+     * 但涉及底层的代码，相对不好理解，但可以直接使用。
      * 参考资料 https://stackoverflow.com/questions/8721019/drawrect-drawing-transparent-text
      */
-    UILabel *knockoutLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-200)];
-    [knockoutLabel setText:@"10月11日"];
-    knockoutLabel.textAlignment = NSTextAlignmentCenter;
-    [knockoutLabel setFont:[UIFont boldSystemFontOfSize:72.0]];
-    [knockoutLabel setNumberOfLines:1];
-    [knockoutLabel setBackgroundColor:[UIColor clearColor]];
-    [knockoutLabel setTextColor:[UIColor whiteColor]];
-    //核心代码 invertAlpha
-    UIImage *image1 = [[self imageFromView:knockoutLabel] invertAlpha];
+//    UILabel *knockoutLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-200)];
+//    [knockoutLabel setText:@"10月11日"];
+//    knockoutLabel.textAlignment = NSTextAlignmentCenter;
+//    [knockoutLabel setFont:[UIFont boldSystemFontOfSize:72.0]];
+//    [knockoutLabel setNumberOfLines:1];
+//    [knockoutLabel setBackgroundColor:[UIColor clearColor]];
+//    [knockoutLabel setTextColor:[UIColor whiteColor]];
+//    //核心代码 invertAlpha
+//    UIImage *image1 = [[self imageFromView:knockoutLabel] invertAlpha];
+//
+//    //生成mask及设置其轮廓
+//    CALayer *maskLayer = [CALayer layer];
+//    maskLayer.contents = (__bridge id _Nullable)(image1.CGImage);
+//    maskLayer.anchorPoint = CGPointZero;
+//    maskLayer.bounds = CGRectMake(0, 100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-200);
+//    //给灰色的view设置mask
+//    [lightGrayView.layer setMask:maskLayer];
+//
+//    [self.view addSubview:imageView];
+//    [self.view addSubview:lightGrayView];
 
+    /*
+     * 思路三
+     * 利用继承UIView后自定义drawRect: 方法
+     * 在该方法中，使用CoreGraphics直接绘制带有背景的镂空的View
+     * 设置相对简单，相比第二种方法更加好理解和使用
+     * 参考资料 https://stackoverflow.com/questions/18716751/drawing-a-path-with-subtracted-text-using-core-graphics
+     */
 
-    //生成mask及设置其轮廓
-    CALayer *maskLayer = [CALayer layer];
-    maskLayer.contents = (__bridge id _Nullable)(image1.CGImage);
-    maskLayer.anchorPoint = CGPointZero;
-    maskLayer.bounds = CGRectMake(0, 100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-200);
-    //给灰色的view设置mask
-    [lightGrayView.layer setMask:maskLayer];
+    HollowedOutTextView *hoTextView = [[HollowedOutTextView alloc] init];
+    hoTextView.hollowedOutText = @"10月11日";
+    hoTextView.frame = CGRectMake(0, 100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-200);
 
     [self.view addSubview:imageView];
-    [self.view addSubview:lightGrayView];
+    [self.view addSubview:hoTextView];
 
-//    UIImageView *textimageview = [[UIImageView alloc] initWithImage:image1];
-//    [self.view addSubview:textimageview];
 }
 
 

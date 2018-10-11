@@ -16,6 +16,7 @@
 		7D56EDC8216D8ED300856FC5 /* Project_15___Hollowed_Out_Text_EffectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D56EDC7216D8ED300856FC5 /* Project_15___Hollowed_Out_Text_EffectTests.m */; };
 		7D56EDD3216D8ED300856FC5 /* Project_15___Hollowed_Out_Text_EffectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D56EDD2216D8ED300856FC5 /* Project_15___Hollowed_Out_Text_EffectUITests.m */; };
 		7D56EDE2216EE5CC00856FC5 /* UIImage+SubstractedText.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D56EDE1216EE5CC00856FC5 /* UIImage+SubstractedText.m */; };
+		7D56EDE5216F29C600856FC5 /* HollowedOutTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D56EDE4216F29C600856FC5 /* HollowedOutTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		7D56EDD4216D8ED300856FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D56EDE0216EE5CC00856FC5 /* UIImage+SubstractedText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SubstractedText.h"; sourceTree = "<group>"; };
 		7D56EDE1216EE5CC00856FC5 /* UIImage+SubstractedText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SubstractedText.m"; sourceTree = "<group>"; };
+		7D56EDE3216F29C600856FC5 /* HollowedOutTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HollowedOutTextView.h; sourceTree = "<group>"; };
+		7D56EDE4216F29C600856FC5 /* HollowedOutTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HollowedOutTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				7D56EDBD216D8ED300856FC5 /* main.m */,
 				7D56EDE0216EE5CC00856FC5 /* UIImage+SubstractedText.h */,
 				7D56EDE1216EE5CC00856FC5 /* UIImage+SubstractedText.m */,
+				7D56EDE3216F29C600856FC5 /* HollowedOutTextView.h */,
+				7D56EDE4216F29C600856FC5 /* HollowedOutTextView.m */,
 			);
 			path = "Project 15 - Hollowed Out Text Effect";
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D56EDB3216D8ED200856FC5 /* ViewController.m in Sources */,
+				7D56EDE5216F29C600856FC5 /* HollowedOutTextView.m in Sources */,
 				7D56EDE2216EE5CC00856FC5 /* UIImage+SubstractedText.m in Sources */,
 				7D56EDBE216D8ED300856FC5 /* main.m in Sources */,
 				7D56EDB0216D8ED200856FC5 /* AppDelegate.m in Sources */,
