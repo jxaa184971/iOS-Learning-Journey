@@ -446,4 +446,5 @@ for (int index = 0; index < sectionTitlesCount; index++) {
 ```
 ### Project 15 - Hollowed Out Text Effect
 效果图如下
+
 ![project15](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2015%20-%20Hollowed%20Out%20Text%20Effect/IMG2367.jpeg)
