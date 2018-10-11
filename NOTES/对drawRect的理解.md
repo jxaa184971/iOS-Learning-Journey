@@ -1,7 +1,6 @@
 # 对drawRect的理解
 ## 写在前面
 * 默认情况下，该方法在视图加载过程中不做任何人处理。当子类使用`Core Graphics`和`UIKit`绘制视图内容时就需要在该方法中添加绘制的代码。
-
 * 该方法定义在`UIView(UIViewRendering)`分类里面，望文生义，该方法完成视图的绘制。
 
 ## drawRect作用
@@ -26,3 +25,4 @@
 * `drawRect:`方法不能手动调用，需要调用实例方法`setNeedsDisplay`或者`setNeedsDisplayInRect`,让系统自动调用该方法；
 * 若使用`CALayer`绘图，只能在`drawInContext:`绘制，或者在`delegate`方法中进行绘制，然后调用`setNeedDisplay`方法实现最终的绘制；
 * `UIImageView`继承自`UIView`,但是`UIImageView`能不重写`drawRect:`方法用于实现自定义绘图。具体原因如下图苹果官方文档所示：
+![image](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/PIC/1713024374336bff0e5c456.png)
