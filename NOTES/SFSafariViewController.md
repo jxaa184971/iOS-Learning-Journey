@@ -34,7 +34,7 @@ PS: 代理非必须，不实现任何代理功能也不影响用户正常的打�
 - (void)safariViewController:(SFSafariViewController *)controller didCompleteInitialLoad:(BOOL)didLoadSuccessfully;
 ```
 
-### 初始化浏览器
+### 样例代码
 ```objective-c
 //加载一个url，是否启用阅读器功能
 SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"] entersReaderIfAvailable:YES];
