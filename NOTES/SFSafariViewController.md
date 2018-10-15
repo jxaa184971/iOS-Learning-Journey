@@ -18,14 +18,7 @@
 @end
 ```
 
-### 初始化浏览器
-```objective-c
-//加载一个url，是否启用阅读器功能
-SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"] entersReaderIfAvailable:YES];
-safariVC.delegate = self;
-[self presentViewController:safariVC animated:YES completion:nil];
-```
-`entersReaderIfAvailable`参数表示：如果web页面提供阅读器（Reader）功能，是否使用。
+PS: 代理非必须，不实现任何代理功能也不影响用户正常的浏览web和关闭的操作。
 
 ### 常用代理方法
 ```objective-c
@@ -40,3 +33,12 @@ safariVC.delegate = self;
  */
 - (void)safariViewController:(SFSafariViewController *)controller didCompleteInitialLoad:(BOOL)didLoadSuccessfully;
 ```
+
+### 初始化浏览器
+```objective-c
+//加载一个url，是否启用阅读器功能
+SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:@"https://www.baidu.com"] entersReaderIfAvailable:YES];
+safariVC.delegate = self;
+[self presentViewController:safariVC animated:YES completion:nil];
+```
+`entersReaderIfAvailable`参数表示：如果web页面提供阅读器（Reader）功能，是否使用。
