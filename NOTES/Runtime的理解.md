@@ -4,7 +4,7 @@ Objective-C语言是一门**动态**语言，它将很多静态语言在编译�
 Runtime库主要做下面几件事：
 
 * 封装：在这个库中，对象可以用C语言中的结构体表示，而方法可以用C函数来实现，另外再加上了一些额外的特性。这些结构体和函数被runtime函数封装后，我们就可以在**程序运行时创建，检查，修改类、对象和它们的方法**了。
-* 找出方法的最终执行代码：当程序执行[object doSomething]时，会向消息接收者(object)发送一条消息(doSomething)，runtime会根据**消息接收者是否能响应**该消息而做出不同的反应。
+* 找出方法的最终执行代码：当程序执行[object doSomething]时，会向消息接收者(object)发送一条消息(doSomething)，runtime会根据**消息接收者是否能响应该消息而做出不同的反应**。
 
 ## 类与对象基础数据结构
 ### Class
@@ -38,6 +38,7 @@ struct objc_class {
 2. super_class：指向该类的父类，如果该类已经是最顶层的根类(如NSObject或NSProxy)，则super_class为NULL。
 3. cache：用于缓存最近使用的方法。一个接收者对象接收到一个消息时，它会根据isa指针去查找能够响应这个消息的对象。在实际使用中，这个对象只有一部分方法是常用的，很多方法其实很少用或者根本用不上。这种情况下，如果每次消息来时，我们都是methodLists中遍历一遍，性能势必很差。这时，cache就派上用场了。在我们每次调用过一个方法后，这个方法就会被缓存到cache列表中，下次调用的时候runtime就会优先去cache中查找，如果cache没有，才去methodLists中查找方法。这样，对于那些经常用到的方法的调用，但提高了调用的效率。
 4. version：我们可以使用这个字段来提供类的版本信息。这对于对象的序列化非常有用，它可是让我们识别出不同类定义版本中实例变量布局的改变。
+
 
 针对cache，我们用下面例子来说明其执行过程：
 ```objective-c
@@ -100,3 +101,6 @@ meta-class之所以重要，是因为**它存储着一个类的所有类方法**
 再深入一下，meta-class也是一个类，也可以向它发送一个消息，那么它的isa又是指向什么呢？为了不让这种结构无限延伸下去，Objective-C的设计者让所有的meta-class的isa指向基类的meta-class，以此作为它们的所属类。即，任何NSObject继承体系下的meta-class都使用NSObject的meta-class作为自己的所属类，而基类的meta-class的isa指针是指向它自己。这样就形成了一个完美的闭环。
 
 通过上面的描述，再加上对objc_class结构体中super_class指针的分析，我们就可以描绘出类及相应meta-class类的一个继承体系了，如下图所示：
+
+![pic](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/PIC/e6343327dc94289815c407058ba5bcbd.png)
+
