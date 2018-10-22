@@ -1,3 +1,5 @@
+相关内容引用自：http://www.codeceo.com/article/objective-c-runtime-class.html
+
 # Runtime
 Objective-C语言是一门**动态**语言，它将很多静态语言在编译和链接时期做的事放到了运行时来处理。
 
