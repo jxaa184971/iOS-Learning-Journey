@@ -2,23 +2,23 @@
 - Personal iOS Learning Journey
 
 ## 目录(Table of Contents)
-- [iOS Learning Notes](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES.md)
-    - [Mansory库 - 好用的第三方AutoLayout库](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/Masonry%E5%BA%93.md)
-    - [UIImagePickerController - 相机照片选择器](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/UIImagePickerController%E7%9B%B8%E6%9C%BA%E7%85%A7%E7%89%87%E9%80%89%E6%8B%A9%E5%99%A8.md)
-    - [iOS NSNotification - 消息通知](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/iOS%20NSNotification%20-%20%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5.md)
-    - [Grand Central Dispatch - iOS多线程GCD简介](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/iOS%E5%A4%9A%E7%BA%BF%E7%A8%8BGCD%E7%AE%80%E4%BB%8B.md#ios%E5%A4%9A%E7%BA%BF%E7%A8%8Bgcd%E7%AE%80%E4%BB%8B)
-    - [UIVisualEffectView - 磨砂效果](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/UIVisualEffectView%20-%20%E7%A3%A8%E7%A0%82%E6%95%88%E6%9E%9C.md)
-    - [AVAudioSession - 音频控制](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/AVAudioSession%20%E9%9F%B3%E9%A2%91%E6%8E%A7%E5%88%B6.md)
-    - [获取网络状态及网络类型](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/%E8%8E%B7%E5%8F%96%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81%E5%8F%8A%E7%BD%91%E7%BB%9C%E7%B1%BB%E5%9E%8B.md)
-    - [weak type self](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/weak%20type%20self.md)
-    - [CoreLocation - 获取GPS所在的城市或省份](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/%E8%8E%B7%E5%8F%96GPS%E6%89%80%E5%9C%A8%E7%9A%84%E5%9F%8E%E5%B8%82%E6%88%96%E7%9C%81%E4%BB%BD.md)
-    - [通过View寻找其所在的ViewController](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/%E9%80%9A%E8%BF%87View%E5%AF%BB%E6%89%BE%E5%85%B6%E6%89%80%E5%9C%A8%E7%9A%84ViewController.md)
-    - [runtime将Dictionary转为指定Model的对象](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/runtime%E5%B0%86Dictionary%E8%BD%AC%E4%B8%BA%E6%8C%87%E5%AE%9AModel%E7%9A%84%E5%AF%B9%E8%B1%A1.md)
-    - [UIWebView以及WKWebView的UA设置](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/UIWebView%E4%BB%A5%E5%8F%8AWKWebView%E7%9A%84UA%E8%AE%BE%E7%BD%AE.md)
-    - [从UIWebView中获取JS点击事件](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/%E4%BB%8EUIWebView%E4%B8%AD%E8%8E%B7%E5%8F%96JS%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6.md)
-    - [WKWebView](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/WKWebView.md)
-    - [从WKWebView中获取JS点击事件](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/%E4%BB%8EWKWebView%E4%B8%AD%E8%8E%B7%E5%8F%96JS%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6.md)
-    - [UITextView - 超链接](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/UITextView%20-%20%E8%B6%85%E9%93%BE%E6%8E%A5.md)
+- [iOS Learning Notes](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES.md)
+    - [Mansory库 - 好用的第三方AutoLayout库](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/Masonry%E5%BA%93.md)
+    - [UIImagePickerController - 相机照片选择器](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/UIImagePickerController%E7%9B%B8%E6%9C%BA%E7%85%A7%E7%89%87%E9%80%89%E6%8B%A9%E5%99%A8.md)
+    - [iOS NSNotification - 消息通知](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/iOS%20NSNotification%20-%20%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5.md)
+    - [Grand Central Dispatch - iOS多线程GCD简介](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/iOS%E5%A4%9A%E7%BA%BF%E7%A8%8BGCD%E7%AE%80%E4%BB%8B.md#ios%E5%A4%9A%E7%BA%BF%E7%A8%8Bgcd%E7%AE%80%E4%BB%8B)
+    - [UIVisualEffectView - 磨砂效果](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/UIVisualEffectView%20-%20%E7%A3%A8%E7%A0%82%E6%95%88%E6%9E%9C.md)
+    - [AVAudioSession - 音频控制](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/AVAudioSession%20%E9%9F%B3%E9%A2%91%E6%8E%A7%E5%88%B6.md)
+    - [获取网络状态及网络类型](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/%E8%8E%B7%E5%8F%96%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81%E5%8F%8A%E7%BD%91%E7%BB%9C%E7%B1%BB%E5%9E%8B.md)
+    - [weak type self](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/weak%20type%20self.md)
+    - [CoreLocation - 获取GPS所在的城市或省份](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/%E8%8E%B7%E5%8F%96GPS%E6%89%80%E5%9C%A8%E7%9A%84%E5%9F%8E%E5%B8%82%E6%88%96%E7%9C%81%E4%BB%BD.md)
+    - [通过View寻找其所在的ViewController](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/%E9%80%9A%E8%BF%87View%E5%AF%BB%E6%89%BE%E5%85%B6%E6%89%80%E5%9C%A8%E7%9A%84ViewController.md)
+    - [runtime将Dictionary转为指定Model的对象](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/runtime%E5%B0%86Dictionary%E8%BD%AC%E4%B8%BA%E6%8C%87%E5%AE%9AModel%E7%9A%84%E5%AF%B9%E8%B1%A1.md)
+    - [UIWebView以及WKWebView的UA设置](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/UIWebView%E4%BB%A5%E5%8F%8AWKWebView%E7%9A%84UA%E8%AE%BE%E7%BD%AE.md)
+    - [从UIWebView中获取JS点击事件](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/%E4%BB%8EUIWebView%E4%B8%AD%E8%8E%B7%E5%8F%96JS%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6.md)
+    - [WKWebView](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/WKWebView.md)
+    - [从WKWebView中获取JS点击事件](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/%E4%BB%8EWKWebView%E4%B8%AD%E8%8E%B7%E5%8F%96JS%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6.md)
+    - [UITextView - 超链接](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/UITextView%20-%20%E8%B6%85%E9%93%BE%E6%8E%A5.md)
   
 - [iOS Learning Demos](#ios-learning-journey)
     - [Project 01 - UIImage Resize](#project-01---uiimage-resize)
@@ -40,7 +40,7 @@
 ### Project 01 - UIImage Resize
 在使用图片的时候, 有时候图片的原本像素太大, 导致显示的时候图片显示异常. 例如使用地图自定义大头针的时候, 如果图片像素过大, 大头针会铺满整个屏幕, 直接缩小修改图片的大小又会导致大头针图像变得模糊. 这时候就需要更改UIImage到所需要的像素.
 
-![project01](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2001%20-%20UIImage%20Resize/Project01.gif)
+![project01](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2001%20-%20UIImage%20Resize/Project01.gif)
 
 以下是基本实现方法:
 
@@ -75,7 +75,7 @@ func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage {
 ### Project 02 - HTTP Request and JSON
 发送HTTP同步请求及JSON格式的数据处理
  
-![project02](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2002%20-%20HTTP%20Request%20%26%20JSON/Project02.gif)
+![project02](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2002%20-%20HTTP%20Request%20%26%20JSON/Project02.gif)
 
 实现方法:
 
@@ -156,7 +156,7 @@ func sendRequest() -> Array<String>?
 ### Project 03 - Splash Launching
 模仿Twitter的Lauching动画
 
-![project03](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2003%20-%20Splash%20Lauching/Project03.gif)
+![project03](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2003%20-%20Splash%20Lauching/Project03.gif)
 
 实现方法:
 通过改变CALayer mask属性的边界bound来实现动画效果. mask就是定义该Layer显示的部分.在这里显示的部分最初与Twitter Logo相吻合, 然后略微缩小, 最后放大至超过屏幕大小.
@@ -198,29 +198,29 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 本项目介绍了利用`UIView.animateWithDuration()`方法来实现一些简单的动画, 包括位置的改变, 透明度的改变, 大小的改变, 颜色的改变已经旋转. 效果图如下:
 
 ##### 位置
-![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Position.gif)
+![project04](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Position.gif)
 ##### 透明度
-![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Opacity.gif)
+![project04](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Opacity.gif)
 ##### 大小
-![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Scale.gif)
+![project04](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Scale.gif)
 ##### 颜色
-![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Color.gif)
+![project04](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Color.gif)
 ##### 旋转
-![project04](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Rotation.gif)
+![project04](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2004%20-%20Simple%20Animation/Rotation.gif)
 
 <br></br>
 
 ### Project 05 - Log In Animation
 此项目为实现一些登录界面的动画效果, 让用户交互体验提高。
 
-![project05](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2005%20-%20Log%20In%20Animation/Project%2005.gif)
+![project05](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2005%20-%20Log%20In%20Animation/Project%2005.gif)
 
 <br></br>
 
 ### Project 06 - Video Background
 此项目模仿Spotify公司实现了登录界面的视频背景.
 
-![project06](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2006%20-%20VideoBackground/Project%2006.gif)
+![project06](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2006%20-%20VideoBackground/Project%2006.gif)
 
 <br></br>
 
@@ -228,14 +228,14 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 此项目实现了自定义Segue及Unwind Segue. 
 包括UIStoryboardSegue的实现, 页面的自定义动画跳转, 手势的添加等.
 
-![project07](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2007%20-%20Custom%20Segue/Project%2007.gif)
+![project07](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2007%20-%20Custom%20Segue/Project%2007.gif)
 
 <br></br>
 
 ### Project 08 - Pull To Refresh
 此项目实现了TableView的下拉刷新效果
 
-![project08](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2008%20-%20Pull%20To%20Refresh/Project%2008.gif)
+![project08](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2008%20-%20Pull%20To%20Refresh/Project%2008.gif)
 
 <br></br>
 
@@ -247,14 +247,14 @@ override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 #### 实现原理
 如果指定轮播的图片(或View)为5张, 那么在UICollectionView的前面增加最后一张的图片(或View), 最后增加第一张图片(或View). 最终UICollectionView的排列为: 5 1 2 3 4 5 1. 每次滑到首位(第一个5)时, 通过代码移动到相同样式的倒数第二的位置(倒数第二个5); 滑到末位(最后一个1)时, 通过代码移动到相应样式的第二个位置(第一个1). 用这样的方法来达到无限循环的效果.
 
-![project09](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2009%20-%20Banner/Project%2009.gif)
+![project09](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2009%20-%20Banner/Project%2009.gif)
 
 <br></br>
 
 ### Project 10 - Window Effect
 此项目实现了UITableView中的橱窗显示图片的效果. 
 
-![project10](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2010%20-%20Window%20Effect/Project%2010.gif)
+![project10](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2010%20-%20Window%20Effect/Project%2010.gif)
 
 #### 实现原理
 首先需要选择一张需要实现橱窗效果的图片, 其高度需要高于cell本身的高度, 将其放入cell中靠顶部显示. 每次用户滑动tablview时, 调动cell中自定义的方法. 该方法计算UIImageView中心点到window中心的距离(offset), 再通过修改UIImageView的transform将图片偏移-offset, 通过此方式使图片始终固定在window的中心. 再利用cell的clipsToBounds属性不显示超出cell的图片，从而最终达到橱窗的效果.
@@ -288,11 +288,11 @@ func resetImagePosition(){
 ### Project 11 - QR Code
 此项目实现了将URL字符串转换成二维码的功能。项目中还附带了修改二维码颜色的代码，以及将UIView截屏成UIImage的代码。
 
-![project11](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2011%20-%20QR%20Code/Project%2011.png)
+![project11](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2011%20-%20QR%20Code/Project%2011.png)
 
 #### 核心代码
 ```objective-c
-NSString *url = @"https://github.com/jxa184971";
+NSString *url = @"https://github.com/jxaa184971";
 // 1. 创建一个二维码滤镜实例(CIFilter)
 CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
 // 滤镜恢复默认设置
@@ -328,7 +328,7 @@ UIGraphicsEndImageContext();
 ### Project 12 - UILocalizedIndexedCollation
 此项目实现了利用UILocalizedIndexedCollation来对姓名进行排列，以达到原生通讯录的效果。
 
-![project12](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2012%20-%20UILocalizedIndexedCollation/Project%2012.png)
+![project12](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2012%20-%20UILocalizedIndexedCollation/Project%2012.png)
 
 #### 实现原理
 首先通过`[self.localizedCollection sectionForObject:person collationStringSelector:@selector(name)]`方法对每一个person对象对name属性进行分类，根据首字母来进行分类. 比如"林丹", 首字母是L, 在A~Z中排第11(第一位是0), sectionNumber就为11. 
@@ -358,7 +358,7 @@ for (int index = 0; index < sectionTitlesCount; index++) {
 ### Project 13 - AnimatedTransitioning
 此项目实现了UINavigationController下页面跳转的自定义转场动画效果。
 
-![project13](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2013%20-%20AnimatedTransitioning/Project%2013.gif)
+![project13](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2013%20-%20AnimatedTransitioning/Project%2013.gif)
 
 #### 实现原理
 首先需要定义一个NSObject实现UIViewControllerAnimatedTransitioning代理
@@ -430,9 +430,9 @@ for (int index = 0; index < sectionTitlesCount; index++) {
 ### Project 14 - UIVisualEffectView
 此项目实现了磨砂效果。了解了如何UIVisualEffectView来实现磨砂效果及生动效果。
 
-相关内容笔记如下：[UIVisualEffectView - 磨砂效果笔记](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/NOTES/UIVisualEffectView%20-%20%E7%A3%A8%E7%A0%82%E6%95%88%E6%9E%9C.md)
+相关内容笔记如下：[UIVisualEffectView - 磨砂效果笔记](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/NOTES/UIVisualEffectView%20-%20%E7%A3%A8%E7%A0%82%E6%95%88%E6%9E%9C.md)
 
-![project14](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2014%20-%20UIVisualEffectView/Project%2014.gif)
+![project14](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2014%20-%20UIVisualEffectView/Project%2014.gif)
 
 #### 核心代码
 ```objective-c
@@ -447,7 +447,7 @@ for (int index = 0; index < sectionTitlesCount; index++) {
 ### Project 15 - Hollowed Out Text Effect
 此项目实现了文字镂空的效果，大致效果图如下：
 
-![project15](https://github.com/jxa184971/iOS-Learning-Journey/blob/master/Project%2015%20-%20Hollowed%20Out%20Text%20Effect/IMG2367.jpeg)
+![project15](https://github.com/jxaa184971/iOS-Learning-Journey/blob/master/Project%2015%20-%20Hollowed%20Out%20Text%20Effect/IMG2367.jpeg)
 
 #### 思路一
 整体思路为使用一张透明字体背景不透明的图片作为遮盖图层的mask。为了达到这个目的：
